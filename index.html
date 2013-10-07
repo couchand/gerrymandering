@@ -129,6 +129,12 @@ function checkComplete() {
         .append('g')
         .attr('transform', 'translate('+margin+','+margin+')');
 
+    g.append('clipPath')
+        .attr('id', 'clip')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height);
+
     g.append('g')
         .attr('class', 'x axis')
         .attr('transform', 'translate(0,'+height+')')
@@ -151,6 +157,7 @@ function checkComplete() {
         .data(years)
         .enter().append('path')
         .attr('class', 'distribution')
+        .attr('clip-path', 'url(#clip)')
         .attr('stroke', function(d){ return color(d.year); })
         .attr('d', function(d){ return cdfLine(d.cutoffs); });
 
