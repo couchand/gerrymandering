@@ -50,9 +50,13 @@ var y = d3.scale.linear()
     .domain([0, 1])
     .range([height, 0]);
 
+var colorCount = yearsToShow.length,
+    offset = 2,
+    scaleCount = Math.max(3, Math.min(9, colorCount+offset));
+
 var color = d3.scale.ordinal()
     .domain(yearsToShow)
-    .range(colorbrewer["PuBuGn"]["9"].slice(2));
+    .range(colorbrewer["PuBuGn"][""+scaleCount].slice(offset));
 
 var percentile = d3.scale.quantile()
     .range(d3.range(0,100));
