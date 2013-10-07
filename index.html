@@ -27,6 +27,9 @@ var DELEGATES = {
     VI: 1
 };
 
+var percentile = d3.scale.quantile()
+    .range(d3.range(0,100));
+
 function cleanRecord(d) {
     d.name = d.name.trim();
     d.state = d.state.trim();
@@ -53,9 +56,12 @@ function loadYear(year, cb) {
     });
 }
 
+years = {};
+
 for ( var i = 2000; i <= 2012; i += 2 ) {
     loadYear(i, function(d) {
-        console.log( d[0].year, d.length );
+        percentile.domain(d.map(function(r) { return r.result; } ));
+        years[d[0].year] = percentile.quantiles();
     });
 }
 
