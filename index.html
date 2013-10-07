@@ -23,6 +23,8 @@ body {
 <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
 <script>
 
+var yearsToShow = [2000, 2002, 2004, 2006, 2008, 2010, 2012];
+
 var DELEGATES = {
     AS: 1,
     DC: 1,
@@ -49,7 +51,7 @@ var y = d3.scale.linear()
     .range([height, 0]);
 
 var color = d3.scale.ordinal()
-    .domain([2000, 2002, 2004, 2006, 2008, 2010, 2012])
+    .domain(yearsToShow)
     .range(colorbrewer["PuBuGn"]["9"].slice(2));
 
 var percentile = d3.scale.quantile()
@@ -105,7 +107,7 @@ var yearsIncumbent = [];
 var yearsNonincumbent = [];
 var remainingYears = [];
 
-for ( var i = 2000; i <= 2012; i += 2 ) {
+yearsToShow.forEach(function(i) {
     remainingYears.push(i);
     loadYear(i, function(d) {
         percentile.domain(d.filter(function(r) { return r.incumbent; }).map(function(r) { return r.result; } ));
@@ -127,7 +129,7 @@ for ( var i = 2000; i <= 2012; i += 2 ) {
         remainingYears.pop();
         checkComplete();
     });
-}
+});
 
 function checkComplete() {
     if ( remainingYears.length ) return;
