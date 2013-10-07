@@ -50,7 +50,7 @@ var y = d3.scale.linear()
 
 var color = d3.scale.ordinal()
     .domain([2000, 2002, 2004, 2006, 2008, 2010, 2012])
-    .range(colorbrewer["YlGnBu"]["7"]);
+    .range(colorbrewer["PuBuGn"]["9"].slice(2));
 
 var percentile = d3.scale.quantile()
     .range(d3.range(0,100));
