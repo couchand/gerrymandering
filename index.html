@@ -58,8 +58,7 @@ var percentile = d3.scale.quantile()
 var xAxis = d3.svg.axis()
     .orient('bottom')
     .scale(x)
-    .tickFormat(percentage)
-    .tickValues([0.5,0.75,1]);
+    .tickFormat(percentage);
 
 var yAxis = d3.svg.axis()
     .orient('left')
@@ -137,6 +136,16 @@ function checkComplete() {
     g.append('g')
         .attr('class', 'y axis')
         .call(yAxis);
+
+    g.append('text')
+        .attr('x', width * 0.6)
+        .attr('y', height + 30)
+        .text('Share of vote obtained by representative');
+
+    g.append('text')
+        .attr('x', -margin * 0.7)
+        .attr('y', -15)
+        .text('Percent of representatives receiving at least that share');
 
     g.selectAll('.distribution')
         .data(years)
