@@ -32,21 +32,20 @@ var DELEGATES = {
     VI: 1
 };
 
-var noLabel = function() { return ''; };
 var percentage = d3.format('.0%');
 
-var width = 550,
-    height = 150,
-    margin = 10,
-    widthSvg = width + 2*margin + 5,
-    heightSvg = height + 2*margin + 10;
+var width = 800,
+    height = 400,
+    margin = 50,
+    widthSvg = width + 2*margin,
+    heightSvg = height + 2*margin;
 
 var x = d3.scale.linear()
     .domain([0.45, 1])
     .range([0, width]);
 
 var y = d3.scale.linear()
-    .domain([0, 100])
+    .domain([0, 1])
     .range([height, 0]);
 
 var color = d3.scale.ordinal()
@@ -65,12 +64,16 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
     .orient('left')
     .scale(y)
-    .tickFormat(noLabel)
-    .tickValues([0,25,50,75,100]);
+    .tickFormat(percentage)
+    .tickValues([0,0.25,0.5,0.75,1]);
+
+function deindex(i) {
+    return i * 0.01;
+}
 
 var cdfLine = d3.svg.line()
     .x(function(d) { return x(d); })
-    .y(function(d, i) { return y(i); })
+    .y(function(d, i) { return y(deindex(i)); })
     .interpolate('basis');
 
 function cleanRecord(d) {
