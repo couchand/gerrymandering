@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var DELEGATES = {
+    AS: 1,
+    DC: 1,
+    GU: 1,
+    MP: 1,
+    PR: 1,
+    VI: 1
+};
+
+function cleanRecord(d) {
+    d.name = d.name.trim();
+    d.state = d.state.trim();
+    d.district = d.state + '-' + d.district.trim();
+    d.incumbent = d.incumbent == 1;
+    d.result = +d.result;
+}
+
+function setYear(year) {
+    return function(d) {
+        d.year = year;
+    }
+}
+
+function isRepresentative(d) {
+    return !(d.state in DELEGATES);
+}
+
+function loadYear(year, cb) {
+    d3.csv('data/'+year+'.csv', function(error, districts) {
+        districts.forEach(cleanRecord);
+        districts.forEach(setYear(year));
+        cb( districts.filter(isRepresentative) );
+    });
+}
+
+for ( var i = 2000; i <= 2012; i += 2 ) {
+    loadYear(i, function(d) {
+        console.log( d[0].year, d.length );
+    });
+}
+
+</script>
