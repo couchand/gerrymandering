@@ -1,432 +1,441 @@
 state,district,incumbent,name,party,result
-AL,1,1,"Callahan, H. L. ""Sonny""",R,91.26
-AL,2,1,"Everett, Terry",R,68.2
-AL,3,1,"Riley, Bob",R,86.9
-AL,4,1,"Aderholt, Robert",R,60.58
-AL,5,1,"Cramer, Bud",D,88.8
-AL,6,1,"Bachus, Spencer",R,87.94
-AL,7,1,"Hilliard, Earl F.",D,74.63
-AZ,1,0,"Flake, Jeff",R,53.61
-AZ,2,1,"Pastor, Ed",D,68.54
-AZ,3,1,"Stump, Bob",R,65.69
-AZ,4,1,"Shadegg, John",R,63.96
-AZ,5,1,"Kolbe, Jim",R,60.15
-AZ,6,1,"Hayworth, J.D.",R,61.41
-AR,1,1,"Berry,  Marion",D,60.15
-AR,2,1,"Snyder,  Vic",D,57.54
-AR,3,1,"Hutchinson,  Asa",R,100
-AR,4,0,"Ross,  Mike",D,50.97
-CA,1,1,"Thompson, Mike ",D,65.03
-CA,2,1,"Herger, Wally ",R,65.73
-CA,3,1,"Ose, Doug ",R,56.15
-CA,4,1,"Doolittle, John T. ",R,63.42
-CA,5,1,"Matsui, Robert T. ",D,68.68
-CA,6,1,"Woolsey, Lynn ",D,64.32
-CA,7,1,"Miller, George ",D,76.48
-CA,8,1,"Pelosi, Nancy ",D,84.41
-CA,9,1,"Lee, Barbara ",D,84.95
-CA,10,1,"Tauscher, Ellen O. ",D,52.63
-CA,11,1,"Pombo, Richard W. ",R,57.83
-CA,12,1,"Lantos, Tom ",D,74.52
-CA,13,1,"Stark, Fortney Pete ",D,70.44
-CA,14,1,"Eshoo, Anna G. ",D,70.23
-CA,15,0,"Honda, Mike ",D,54.26
-CA,16,1,"Lofgren, Zoe ",D,72.06
-CA,17,1,"Farr, Sam ",D,68.6
-CA,18,1,"Condit, Gary A. ",D,67.1
-CA,19,1,"Radanovich, George ",R,64.92
-CA,20,1,"Dooley, Cal ",D,52.34
-CA,21,1,"Thomas, Bill ",R,71.59
-CA,22,1,"Capps, Lois ",D,53.14
-CA,23,1,"Gallegly, Elton ",R,54.05
-CA,24,1,"Sherman, Brad ",D,66
-CA,25,1,"McKeon, Howard P. ""Buck"" ",R,62.23
-CA,26,1,"Berman, Howard L. ",D,84.07
-CA,27,0,"Schiff, Adam ",D,52.7
-CA,28,1,"Dreier, David ",R,56.8
-CA,29,1,"Waxman, Henry A. ",D,75.69
-CA,30,1,"Becerra, Xavier ",D,83.29
-CA,31,0,"Solis, Hilda L. ",D,79.35
-CA,32,1,"Dixon, Julian C. ",D,83.54
-CA,33,1,"Roybal-Allard, Lucille ",D,84.54
-CA,34,1,"Napolitano, Grace Flores ",D,71.26
-CA,35,1,"Waters, Maxine ",D,86.54
-CA,36,0,"Harman, Jane ",D,48.36
-CA,37,1,"Millender-McDonald, Juanita ",D,82.34
-CA,38,1,"Horn, Steve ",R,48.45
-CA,39,1,"Royce, Ed ",R,62.73
-CA,40,1,"Lewis, Jerry ",R,79.92
-CA,41,1,"Miller, Gary G. ",R,58.94
-CA,42,1,"Baca, Joe ",D,59.76
-CA,43,1,"Calvert, Ken ",R,73.66
-CA,44,1,"Bono, Mary ",R,59.15
-CA,45,1,"Rohrabacher, Dana ",R,62.12
-CA,46,1,"Sanchez, Loretta ",D,60.2
-CA,47,1,"Cox, Christopher ",R,65.62
-CA,48,0,"Issa, Darrell ",R,61.43
-CA,49,0,"Davis, Susan A. ",D,49.63
-CA,50,1,"Filner, Bob ",D,68.25
-CA,51,1,"Cunningham, Randy ""Duke"" ",R,64.34
-CA,52,1,"Hunter, Duncan ",R,64.7
-CO,1,1,"DeGette, Diana",D,68.7
-CO,2,1,"Udall, Mark",D,55
-CO,3,1,"McInnis, Scott",R,65.84
-CO,4,1,"Schaffer, Bob",R,79.5
-CO,5,1,"Hefley, Joel",R,82.7
-CO,6,1,"Tancredo, Tom",R,53.88
-CT,1,1,"Larson, John B.",D,71.92
-CT,2,0,"Simmons, Rob",R,50.63
-CT,3,1,"DeLauro, Rosa L.",D,71.91
-CT,4,1,"Shays, Christopher",R,57.63
-CT,5,1,"Maloney, Jim",D,53.62
-CT,6,1,"Johnson, Nancy L.",R,62.6
-DE,1,1,"Castle, Michael N.",R,67.63
-FL,1,1,"Scarborough, Joe",R,99.53
-FL,2,1,"Boyd, Allen",D,72.1
-FL,3,1,"Brown, Corrine",D,57.59
-FL,4,0,"Crenshaw, Ander",R,66.96
-FL,5,1,"Thurman, Karen L.",D,64.27
-FL,6,1,"Stearns, Clifford (Cliff) B.",R,99.9
-FL,7,1,"Mica, John L.",R,63.21
-FL,8,0,"Keller, Ric",R,50.79
-FL,9,1,"Bilirakis, Michael",R,81.9
-FL,10,1,"Young, C.W. Bill",R,75.67
-FL,11,1,"Davis, Jim",D,84.6
-FL,12,0,"Putnam, Adam H.",R,57.02
-FL,13,1,"Miller, Dan",R,63.83
-FL,14,1,"Goss, Porter",R,85.24
-FL,15,1,"Weldon, Dave",R,58.84
-FL,16,1,"Foley, Mark",R,60.22
-FL,17,1,"Meek, Carrie P.",D,100
-FL,18,1,"Ros-Lehtinen, Ileane",R,99.98
-FL,19,1,"Wexler, Robert",D,71.62
-FL,20,1,"Deutsch, Peter",D,99.88
-FL,21,1,"Diaz-Balart, Lincoln",R,99.98
-FL,22,1,"Shaw, Clay",R,50.14
-FL,23,1,"Hastings, Alcee L.",D,76.34
-GA,1,1,"Kingston, Jack",R,69.14
-GA,2,1,"Bishop, Sanford",D,53.48
-GA,3,1,"Collins, Mac",R,63.45
-GA,4,1,"McKinney, Cynthia",D,60.72
-GA,5,1,"Lewis, John",D,77.18
-GA,6,1,"Isakson, Johnny",R,74.75
-GA,7,1,"Barr, Bob",R,55.26
-GA,8,1,"Chambliss, Saxby",R,58.92
-GA,9,1,"Deal, Nathan",R,75.21
-GA,10,1,"Norwood, Charlie",R,63.22
-GA,11,1,"Linder, John",R,100
-HI,1,1,"Abercrombie, Neil",D,69.03
-HI,2,1,"Mink, Patsy Takemoto",D,61.59
-ID,1,0,"Otter, C. L. ""Butch""",R,64.8
-ID,2,1,"Simpson, Mike",R,70.72
-IL,1,1,"Rush, Bobby L.",D,87.81
-IL,2,1,"Jackson, Jesse L. Jr.",D,89.84
-IL,3,1,"Lipinski, William O.",D,75.58
-IL,4,1,"Gutierrez, Luis V.",D,88.63
-IL,5,1,"Blagojevich, Rod R.",D,87.27
-IL,6,1,"Hyde, Henry J.",R,58.94
-IL,7,1,"Davis, Danny K.",D,85.93
-IL,8,1,"Crane, Philip M.",R,60.99
-IL,9,1,"Schakowsky, Jan",D,76.42
-IL,10,0,"Kirk, Mark Steven",R,51.19
-IL,11,1,"Weller, Gerald C. ""Jerry""",R,56.36
-IL,12,1,"Costello, Jerry F.",D,99.97
-IL,13,1,"Biggert, Judy",R,66.18
-IL,14,1,"Hastert, J. Dennis",R,73.99
-IL,15,0,"Johnson, Tim",R,53.22
-IL,16,1,"Manzullo, Donald A.",R,66.71
-IL,17,1,"Evans, Lane A.",D,54.9
-IL,18,1,"LaHood, Ray",R,67.07
-IL,19,1,"Phelps, David D.",D,64.56
-IL,20,1,"Shimkus, John M.",R,63.1
-IN,1,1,"Visclosky, Peter J.",D,71.55
-IN,2,0,"Pence, Mike",R,50.87
-IN,3,1,"Roemer, Tim",D,51.57
-IN,4,1,"Souder, Mark E.",R,62.28
-IN,5,1,"Buyer, Steve",R,60.86
-IN,6,1,"Burton, Dan",R,70.35
-IN,7,0,"Kerns, Brian D.",R,64.8
-IN,8,1,"Hostettler, John N.",R,52.65
-IN,9,1,"Hill, Baron",D,54.19
-IN,10,1,"Carson, Julia M.",D,58.51
-IA,1,1,"Leach, Jim",R,61.79
-IA,2,1,"Nussle, Jim",R,55.39
-IA,3,1,"Boswell, Leonard L.",D,62.8
-IA,4,1,"Ganske, Greg",R,61.41
-IA,5,1,"Latham, Tom",R,68.75
-KS,1,1,"Moran, Jerry",R,89.34
-KS,2,1,"Ryun, Jim",R,67.39
-KS,3,1,"Moore, Dennis",D,50.05
-KS,4,1,"Tiahrt, Todd",R,54.36
-KY,1,1,"Whitfield, Edward",R,57.96
-KY,2,1,"Lewis, Ron",R,67.72
-KY,3,1,"Northup, Ann Meagher",R,52.87
-KY,4,1,"Lucas, Ken",D,54.26
-KY,5,1,"Rogers, Harold ""Hal""",R,73.55
-KY,6,1,"Fletcher, Ernie",R,52.8
-LA,1,1,"Vitter, David",R,80.48
-LA,2,1,"Jefferson, William J.",D,100
-LA,3,1,"Tauzin, W. J. ""Billy""",R,77.98
-LA,4,1,"McCrery, ""Jim""",R,70.52
-LA,5,1,"Cooksey, John C.",R,69.08
-LA,6,1,"Baker, Richard H.",R,68.03
-LA,7,1,"John, Chris",D,83.28
-ME,1,1,"Allen, Thomas H.",D,59.81
-ME,2,1,"Baldacci, John E.",D,73.43
-MD,1,1,"Gilchrest, Wayne T.",R,64.4
-MD,2,1,"Ehrlich, Robert L. Jr.",R,68.56
-MD,3,1,"Cardin, Benjamin L.",D,75.66
-MD,4,1,"Wynn, Albert R.",D,87.2
-MD,5,1,"Hoyer, Steny H.",D,65.09
-MD,6,1,"Bartlett, Roscoe G.",R,60.65
-MD,7,1,"Cummings, Elijah E.",D,87.07
-MD,8,1,"Morella, Constance A.",R,52
-MA,1,1,"Olver, John W.",D,68.24
-MA,2,1,"Neal, Richard E.",D,98.9
-MA,3,1,"McGovern, James P.",D,98.84
-MA,4,1,"Frank, Barney",D,74.9
-MA,5,1,"Meehan, Martin T.",D,98.02
-MA,6,1,"Tierney, John F.",D,71.04
-MA,7,1,"Markey, Edward J.",D,98.94
-MA,8,1,"Capuano, Michael E.",D,99.28
-MA,9,1,"Moakley, John Joseph",D,77.59
-MA,10,1,"Delahunt, William D.",D,74.13
-MI,1,1,"Stupak, Bart",D,58.38
-MI,2,1,"Hoekstra, Peter",R,64.42
-MI,3,1,"Ehlers, Vernon",R,64.99
-MI,4,1,"Camp, Dave",R,68
-MI,5,1,"Barcia, James A.",D,74.29
-MI,6,1,"Upton, Fred",R,67.92
-MI,7,1,"Smith, Nick",R,61.15
-MI,8,0,"Rogers, Mike",R,48.78
-MI,9,1,"Kildee, Dale E.",D,61.09
-MI,10,1,"Bonior, David E.",D,64.41
-MI,11,1,"Knollenberg, Joe",R,55.76
-MI,12,1,"Levin, Sander",D,64.33
-MI,13,1,"Rivers, Lynn Nancy",D,64.67
-MI,14,1,"Conyers, John Jr.",D,89.08
-MI,15,1,"Kilpatrick, Carolyn Cheeks",D,88.57
-MI,16,1,"Dingell, John D.",D,70.97
-MN,1,1,"Gutknecht, Gil",R,56.43
-MN,2,0,"Kennedy, Mark",R,48.1
-MN,3,1,"Ramstad, Jim",R,67.64
-MN,4,0,"McCollum, Betty",DFL,48.04
-MN,5,1,"Sabo, Martin Olav",DFL,69.23
-MN,6,1,"Luther, Bill",DFL,49.56
-MN,7,1,"Peterson, Collin C.",DFL,68.68
-MN,8,1,"Oberstar, James L.",DFL,67.85
-MS,1,1,"Wicker, Roger F.",R,69.83
-MS,2,1,"Thompson, Bennie G.",D,65.07
-MS,3,1,"Pickering, Charles W. ""Chip""",R,73.16
-MS,4,1,"Shows, Ronnie",D,58.15
-MS,5,1,"Taylor, Gene",D,78.84
-MO,1,0,"Clay, William Lacy",D,75.21
-MO,2,0,"Akin, Todd",R,55.33
-MO,3,1,"Gephardt, Richard A. (Dick)",D,57.84
-MO,4,1,"Skelton, Ike",D,66.93
-MO,5,1,"McCarthy, Karen",D,68.85
-MO,6,0,"Graves, Samuel B. (Sam) Jr.",R,50.85
-MO,7,1,"Blunt, Roy",R,73.85
-MO,8,1,"Emerson, Jo Ann",R,69.31
-MO,9,1,"Hulshof, Kenny",R,59.25
-MT,1,0,"Rehberg, Dennis",R,51.5
-NE,1,1,"Bereuter, Doug",R,66.25
-NE,2,1,"Terry, Lee",R,65.81
-NE,3,0,"Osborne, Tom",R,82
-NV,1,1,"Berkley, Shelley",D,51.68
-NV,2,1,"Gibbons, Jim",R,64.5
-NH,1,1,"Sununu, John E.",R,52.87
-NH,2,1,"Bass, Charles",R,56.19
-NJ,1,1,"Andrews, Robert E.",D,76.19
-NJ,2,1,"LoBiondo, Frank A.",R,66.36
-NJ,3,1,"Saxton, Jim",R,57.3
-NJ,4,1,"Smith, Christopher H.",R,63.2
-NJ,5,1,"Roukema, Marge",R,65.37
-NJ,6,1,"Pallone, Frank Jr.",D,67.52
-NJ,7,0,"Ferguson, Mike",R,51.58
-NJ,8,1,"Pascrell, Bill Jr.",D,66.99
-NJ,9,1,"Rothman, Steven R.",D,67.93
-NJ,10,1,"Payne, Donald M.",D,87.52
-NJ,11,1,"Frelinghuysen, Rodney P.",R,67.97
-NJ,12,1,"Holt, Rush",D,48.73
-NJ,13,1,"Menendez, Robert",D,78.69
-NM,1,1,"Wilson, Heather A.",R,50.34
-NM,2,1,"Skeen, Joe",R,58.11
-NM,3,1,"Udall, Tom",D,67.18
-NY,1,0,"Grucci, Felix J. Jr.",R,55.52
-NY,2,0,"Isreal, Steve J.",D,47.94
-NY,3,1,"King, Peter T.",R,59.53
-NY,4,1,"McCarthy, Carolyn",D,60.55
-NY,5,1,"Ackerman, Gary L.",D,67.95
-NY,6,1,"Meeks, Gregory W.",D,100
-NY,7,1,"Crowley, Joseph",D,71.68
-NY,8,1,"Nadler, Jerrold L.",D,81.24
-NY,9,1,"Weiner, Anthony D.",D,68.44
-NY,10,1,"Towns, Edolphus",D,90.15
-NY,11,1,"Owens, Major R.",D,87.01
-NY,12,1,"Velazquez, Nydia M.",D,87.09
-NY,13,1,"Fossella, Vito J.",R,64.57
-NY,14,1,"Maloney, Carolyn B.",D,73.91
-NY,15,1,"Rangel, Charles B.",D,91.88
-NY,16,1,"Serrano, Jose E.",D,95.81
-NY,17,1,"Engel, Eliot L.",D,89.71
-NY,18,1,"Lowey, Nita M.",D,67.26
-NY,19,1,"Kelly, Sue W.",R,60.85
-NY,20,1,"Gilman, Benjamin A.",R,57.62
-NY,21,1,"McNulty, Michael R.",D,74.4
-NY,22,1,"Sweeney, John E.",R,67.9
-NY,23,1,"Boehlert, Sherwood L.",R,60.54
-NY,24,1,"McHugh, John M.",R,74.29
-NY,25,1,"Walsh, James T.",R,68.96
-NY,26,1,"Hinchey, Maurice D.",D,61.96
-NY,27,1,"Reynolds, Thomas M.",R,69.3
-NY,28,1,"Slaughter, Louise M.",D,65.71
-NY,29,1,"LaFalce, John J.",D,61.26
-NY,30,1,"Quinn, Jack",R,67.12
-NY,31,1,"Houghton, Amo",R,77.34
-NC,1,1,"Clayton, Eva M.",D,65.64
-NC,2,1,"Etheridge, Bob",D,58.26
-NC,3,1,"Jones, Walter B.",R,61.44
-NC,4,1,"Price, David",D,61.64
-NC,5,1,"Burr, Richard M.",R,92.81
-NC,6,1,"Coble, Howard",R,91
-NC,7,1,"McIntyre, Mike",D,69.75
-NC,8,1,"Hayes, Robert C. (Robin)",R,55.02
-NC,9,1,"Myrick, Sue",R,68.56
-NC,10,1,"Ballenger, T. Cass",R,68.22
-NC,11,1,"Taylor, Charles H.",R,55.06
-NC,12,1,"Watt, Mel",D,64.82
-OH,1,1,"Chabot, Steve",R,52.97
-OH,2,1,"Portman, Rob",R,73.57
-OH,3,1,"Hall, Tony P.",D,82.96
-OH,4,1,"Oxley, Michael G.",R,67.43
-OH,5,1,"Gillmor, Paul E.",R,69.8
-OH,6,1,"Strickland, Ted",D,57.72
-OH,7,1,"Hobson, Dave",R,67.57
-OH,8,1,"Boehner, John A.",R,70.96
-OH,9,1,"Kaptur, Marcy",D,74.8
-OH,10,1,"Kucinich, Dennis J.",D,75
-OH,11,1,"Jones, Stephanie Tubbs",D,84.68
-OH,12,0,"Tiberi, Pat",R,52.87
-OH,13,1,"Brown, Sherrod",D,64.59
-OH,14,1,"Sawyer, Thomas C.",D,64.84
-OH,15,1,"Pryce, Deborah",R,67.5
-OH,16,1,"Regula, Ralph",R,69.24
-OH,17,1,"Traficant, James A.",D,49.96
-OH,18,1,"Ney, Bob",R,64.41
-OH,19,1,"LaTourette, Steven C.",R,69.25
-OK,1,1,"Largent, Steve",R,69.26
-OK,2,0,"Carson, Brad",D,54.9
-OK,3,1,"Watkins, Wes",R,86.56
-OK,4,1,"Watts, J.C. Jr.",R,64.89
-OK,5,1,"Istook, Ernest",R,68.44
-OK,6,1,"Lucas, Frank D.",R,59.34
-OR,1,1,"Wu, David",D,58.28
-OR,2,1,"Walden, Greg",R,73.63
-OR,3,1,"Blumenauer, Earl",D,66.77
-OR,4,1,"DeFazio, Peter A.",D,68.02
-OR,5,1,"Hooley, Darlene",D,56.77
-PA,1,1,"Brady, Robert A.",D,88.25
-PA,2,1,"Fattah, Chaka",D,98
-PA,3,1,"Borski, Robert A.",D,68.74
-PA,4,0,"Hart, Melissa",R,58.99
-PA,5,1,"Peterson, John E.",R,85.54
-PA,6,1,"Holden, Tim",D,66.29
-PA,7,1,"Weldon, Curt",R,64.81
-PA,8,1,"Greenwood, Jim",R,59.1
-PA,9,1,"Shuster, Bud",D/R,99.42
-PA,10,1,"Sherwood, Don",R,52.57
-PA,11,1,"Kanjorski, Paul E.",D,66.42
-PA,12,1,"Murtha, John P.",D,70.84
-PA,13,1,"Hoeffel, Joseph M.",D,52.76
-PA,14,1,"Coyne, William J.",D,99.85
-PA,15,1,"Toomey, Pat",R,53.25
-PA,16,1,"Pitts, Joseph R.",R,66.94
-PA,17,1,"Gekas, George W.",R,71.51
-PA,18,1,"Doyle, Mike",D,69.4
-PA,19,0,"Platts, Todd",R,72.53
-PA,20,1,"Mascara, Frank",D,64.37
-PA,21,1,"English, Phil",R,60.83
-RI,1,1,"Kennedy, Patrick J.",D,66.67
-RI,2,0,"Langevin, James R.",D,62.22
-SC,1,0,"Brown, Henry",R,60.32
-SC,2,1,"Spence, Floyd",R,57
-SC,3,1,"Graham, Lindsey",R,67.76
-SC,4,1,"DeMint, Jim",R,79.57
-SC,5,1,"Spratt, John",D,58.78
-SC,6,1,"Clyburn, James E. ""Jim""",D,71.76
-SD,1,1,"Thune, John",R,73.42
-TN,1,1,"Jenkins, William L. ""Bill""",R,99.99
-TN,2,1,"Duncan, John J. Jr.",R,89.34
-TN,3,1,"Wamp, Zach",R,63.87
-TN,4,1,"Hilleary, Van",R,65.76
-TN,5,1,"Clement, Bob",D,72.49
-TN,6,1,"Gordon, Bart",D,62.1
-TN,7,1,"Bryant, Ed",R,69.63
-TN,8,1,"Tanner, John",D,72.26
-TN,9,1,"Ford, Harold Jr.",D,99.97
-TX,1,1,"Sandlin, Max",D,55.77
-TX,2,1,"Turner, Jim",D,91.09
-TX,3,1,"Johnson, Sam",R,71.59
-TX,4,1,"Hall, Ralph M.",D,60.31
-TX,5,1,"Sessions, Pete",R,54.04
-TX,6,1,"Barton, Joe",R,88.11
-TX,7,0,"Culberson, John ",R,73.9
-TX,8,1,"Brady, Kevin",R,91.63
-TX,9,1,"Lampson, Nick",D,59.2
-TX,10,1,"Doggett, Lloyd",D,84.55
-TX,11,1,"Edwards, Chet",D,54.83
-TX,12,1,"Granger, Kay",R,62.66
-TX,13,1,"Thornberry, Mac",R,67.63
-TX,14,1,"Paul, Ron",R,59.71
-TX,15,1,"Hinojosa, Ruben",D,88.48
-TX,16,1,"Reyes, Silvestre",D,68.3
-TX,17,1,"Stenholm, Charlie",D,59.03
-TX,18,1,"Lee, Sheila Jackson",D,76.49
-TX,19,1,"Combest, Larry",R,91.62
-TX,20,1,"Gonzalez, Charles A.",D,87.69
-TX,21,1,"Smith, Lamar",R,75.87
-TX,22,1,"DeLay, Tom",R,60.35
-TX,23,1,"Bonilla, Henry",R,59.32
-TX,24,1,"Frost, Martin",D,61.79
-TX,25,1,"Bentsen, Ken",D,60.11
-TX,26,1,"Armey, Dick",R,72.48
-TX,27,1,"Ortiz, Solomon P.",D,63.38
-TX,28,1,"Rodriguez, Ciro D.",D,89.04
-TX,29,1,"Green, Gene",D,73.32
-TX,30,1,"Johnson, Eddie Bernice",D,91.76
-UT,1,1,"Hansen, James V.",R,68.98
-UT,2,0,"Matheson, Jim",D,55.86
-UT,3,1,"Cannon, Chris",R,58.54
-VA,1,0,"Davis, Jo Ann S.",R,57.54
-VA,2,0,"Schrock, Edward L. ""Ed""",R,51.96
-VA,3,1,"Scott, Robert C. ""Bobby""",D,97.71
-VA,4,1,"Sisisky, Norman",D,98.9
-VA,5,1,"Goode, Virgil H. Jr.",I,67.38
-VA,6,1,"Goodlatte, Robert W. ""Bob""",R,99.26
-VA,7,0,"Cantor, Eric I.",R,66.92
-VA,8,1,"Moran, James P. Jr.",D,63.34
-VA,9,1,"Boucher, Frederick C. ""Rick""",D,69.84
-VA,10,1,"Wolf, Frank R.",R,84.2
-VA,11,1,"Davis, Thomas M. III",R,61.9
-WA,1,1,"Inslee, Jay",D,54.55
-WA,2,0,"Larsen, Rick",D,50.01
-WA,3,1,"Baird, Brian",D,56.4
-WA,4,1,"Hastings, Doc",R,60.93
-WA,5,1,"Nethercutt, George R. Jr.",R,57.34
-WA,6,1,"Dicks, Norm",D,65.62
-WA,7,1,"McDermott, Jim",D,72.78
-WA,8,1,"Dunn, Jennifer",R,62.23
-WA,9,1,"Smith, Adam",D,61.67
-WV,1,1,"Mollohan, Alan B.",D,87.78
-WV,2,0,"Capito, Shelley Moore",R,48.49
-WV,3,1,"Rahall, Nick Joe II",D,91.3
-WI,1,1,"Ryan, Paul D.",R,66.57
-WI,2,1,"Baldwin, Tammy",D,51.36
-WI,3,1,"Kind, Ron",D,63.74
-WI,4,1,"Kleczka, Jerry",D,60.77
-WI,5,1,"Barrett, Tom",D,77.68
-WI,6,1,"Petri, Tom",R,65.02
-WI,7,1,"Obey, David R.",D,63.26
-WI,8,1,"Green, Mark",R,74.62
-WI,9,1,"Sensenbrenner, F. James Jr.",R,74.04
+AL,1,1,"Callahan, H. L. ""Sonny""",R,0.9126
+AL,2,1,"Everett, Terry",R,0.682
+AL,3,1,"Riley, Bob",R,0.869
+AL,4,1,"Aderholt, Robert",R,0.6058
+AL,5,1,"Cramer, Bud",D,0.888
+AL,6,1,"Bachus, Spencer",R,0.8794
+AL,7,1,"Hilliard, Earl F.",D,0.7463
+AK,0,1,"Young, Don E.",R,0.6956
+AS,0,1,"Faleomavaega, Eni F.H.",D,0.6108
+AZ,1,0,"Flake, Jeff",R,0.5361
+AZ,2,1,"Pastor, Ed",D,0.6854
+AZ,3,1,"Stump, Bob",R,0.6569
+AZ,4,1,"Shadegg, John",R,0.6396
+AZ,5,1,"Kolbe, Jim",R,0.6015
+AZ,6,1,"Hayworth, J.D.",R,0.6141
+AR,1,1,"Berry,  Marion",D,0.6015
+AR,2,1,"Snyder,  Vic",D,0.5754
+AR,3,1,"Hutchinson,  Asa",R,1
+AR,4,0,"Ross,  Mike",D,0.5097
+CA,1,1,"Thompson, Mike ",D,0.6503
+CA,2,1,"Herger, Wally ",R,0.6573
+CA,3,1,"Ose, Doug ",R,0.5615
+CA,4,1,"Doolittle, John T. ",R,0.6342
+CA,5,1,"Matsui, Robert T. ",D,0.6868
+CA,6,1,"Woolsey, Lynn ",D,0.6432
+CA,7,1,"Miller, George ",D,0.7648
+CA,8,1,"Pelosi, Nancy ",D,0.8441
+CA,9,1,"Lee, Barbara ",D,0.8495
+CA,10,1,"Tauscher, Ellen O. ",D,0.5263
+CA,11,1,"Pombo, Richard W. ",R,0.5783
+CA,12,1,"Lantos, Tom ",D,0.7452
+CA,13,1,"Stark, Fortney Pete ",D,0.7044
+CA,14,1,"Eshoo, Anna G. ",D,0.7023
+CA,15,0,"Honda, Mike ",D,0.5426
+CA,16,1,"Lofgren, Zoe ",D,0.7206
+CA,17,1,"Farr, Sam ",D,0.686
+CA,18,1,"Condit, Gary A. ",D,0.671
+CA,19,1,"Radanovich, George ",R,0.6492
+CA,20,1,"Dooley, Cal ",D,0.5234
+CA,21,1,"Thomas, Bill ",R,0.7159
+CA,22,1,"Capps, Lois ",D,0.5314
+CA,23,1,"Gallegly, Elton ",R,0.5405
+CA,24,1,"Sherman, Brad ",D,0.66
+CA,25,1,"McKeon, Howard P. ""Buck"" ",R,0.6223
+CA,26,1,"Berman, Howard L. ",D,0.8407
+CA,27,0,"Schiff, Adam ",D,0.527
+CA,28,1,"Dreier, David ",R,0.568
+CA,29,1,"Waxman, Henry A. ",D,0.7569
+CA,30,1,"Becerra, Xavier ",D,0.8329
+CA,31,0,"Solis, Hilda L. ",D,0.7935
+CA,32,1,"Dixon, Julian C. ",D,0.8354
+CA,33,1,"Roybal-Allard, Lucille ",D,0.8454
+CA,34,1,"Napolitano, Grace Flores ",D,0.7126
+CA,35,1,"Waters, Maxine ",D,0.8654
+CA,36,0,"Harman, Jane ",D,0.4836
+CA,37,1,"Millender-McDonald, Juanita ",D,0.8234
+CA,38,1,"Horn, Steve ",R,0.4845
+CA,39,1,"Royce, Ed ",R,0.6273
+CA,40,1,"Lewis, Jerry ",R,0.7992
+CA,41,1,"Miller, Gary G. ",R,0.5894
+CA,42,1,"Baca, Joe ",D,0.5976
+CA,43,1,"Calvert, Ken ",R,0.7366
+CA,44,1,"Bono, Mary ",R,0.5915
+CA,45,1,"Rohrabacher, Dana ",R,0.6212
+CA,46,1,"Sanchez, Loretta ",D,0.602
+CA,47,1,"Cox, Christopher ",R,0.6562
+CA,48,0,"Issa, Darrell ",R,0.6143
+CA,49,0,"Davis, Susan A. ",D,0.4963
+CA,50,1,"Filner, Bob ",D,0.6825
+CA,51,1,"Cunningham, Randy ""Duke"" ",R,0.6434
+CA,52,1,"Hunter, Duncan ",R,0.647
+CO,1,1,"DeGette, Diana",D,0.687
+CO,2,1,"Udall, Mark",D,0.55
+CO,3,1,"McInnis, Scott",R,0.6584
+CO,4,1,"Schaffer, Bob",R,0.795
+CO,5,1,"Hefley, Joel",R,0.827
+CO,6,1,"Tancredo, Tom",R,0.5388
+CT,1,1,"Larson, John B.",D,0.7192
+CT,2,0,"Simmons, Rob",Combined,0.5063
+CT,3,1,"DeLauro, Rosa L.",D,0.7191
+CT,4,1,"Shays, Christopher",R,0.5763
+CT,5,1,"Maloney, Jim",D,0.5362
+CT,6,1,"Johnson, Nancy L.",R,0.626
+DE,1,1,"Castle, Michael N.",R,0.6763
+DC,0,1,"Norton, Eleanor Holmes",D,0.9043
+FL,1,1,"Scarborough, Joe",R,0.9953
+FL,2,1,"Boyd, Allen",D,0.721
+FL,3,1,"Brown, Corrine",D,0.5759
+FL,4,0,"Crenshaw, Ander",R,0.6696
+FL,5,1,"Thurman, Karen L.",D,0.6427
+FL,6,1,"Stearns, Clifford (Cliff) B.",R,0.999
+FL,7,1,"Mica, John L.",R,0.6321
+FL,8,0,"Keller, Ric",R,0.5079
+FL,9,1,"Bilirakis, Michael",R,0.819
+FL,10,1,"Young, C.W. Bill",R,0.7567
+FL,11,1,"Davis, Jim",D,0.846
+FL,12,0,"Putnam, Adam H.",R,0.5702
+FL,13,1,"Miller, Dan",R,0.6383
+FL,14,1,"Goss, Porter",R,0.8524
+FL,15,1,"Weldon, Dave",R,0.5884
+FL,16,1,"Foley, Mark",R,0.6022
+FL,17,1,"Meek, Carrie P.",D,1
+FL,18,1,"Ros-Lehtinen, Ileane",R,0.9998
+FL,19,1,"Wexler, Robert",D,0.7162
+FL,20,1,"Deutsch, Peter",D,0.9988
+FL,21,1,"Diaz-Balart, Lincoln",R,0.9998
+FL,22,1,"Shaw, Clay",R,0.5014
+FL,23,1,"Hastings, Alcee L.",D,0.7634
+GA,1,1,"Kingston, Jack",R,0.6914
+GA,2,1,"Bishop, Sanford",D,0.5348
+GA,3,1,"Collins, Mac",R,0.6345
+GA,4,1,"McKinney, Cynthia",D,0.6072
+GA,5,1,"Lewis, John",D,0.7718
+GA,6,1,"Isakson, Johnny",R,0.7475
+GA,7,1,"Barr, Bob",R,0.5526
+GA,8,1,"Chambliss, Saxby",R,0.5892
+GA,9,1,"Deal, Nathan",R,0.7521
+GA,10,1,"Norwood, Charlie",R,0.6322
+GA,11,1,"Linder, John",R,1
+GU,0,1,"Underwood, Robert A.",D,0.7805
+HI,1,1,"Abercrombie, Neil",D,0.6903
+HI,2,1,"Mink, Patsy Takemoto",D,0.6159
+ID,1,0,"Otter, C. L. ""Butch""",R,0.648
+ID,2,1,"Simpson, Mike",R,0.7072
+IL,1,1,"Rush, Bobby L.",D,0.8781
+IL,2,1,"Jackson, Jesse L. Jr.",D,0.8984
+IL,3,1,"Lipinski, William O.",D,0.7558
+IL,4,1,"Gutierrez, Luis V.",D,0.8863
+IL,5,1,"Blagojevich, Rod R.",D,0.8727
+IL,6,1,"Hyde, Henry J.",R,0.5894
+IL,7,1,"Davis, Danny K.",D,0.8593
+IL,8,1,"Crane, Philip M.",R,0.6099
+IL,9,1,"Schakowsky, Jan",D,0.7642
+IL,10,0,"Kirk, Mark Steven",R,0.5119
+IL,11,1,"Weller, Gerald C. ""Jerry""",R,0.5636
+IL,12,1,"Costello, Jerry F.",D,0.9997
+IL,13,1,"Biggert, Judy",R,0.6618
+IL,14,1,"Hastert, J. Dennis",R,0.7399
+IL,15,0,"Johnson, Tim",R,0.5322
+IL,16,1,"Manzullo, Donald A.",R,0.6671
+IL,17,1,"Evans, Lane A.",D,0.549
+IL,18,1,"LaHood, Ray",R,0.6707
+IL,19,1,"Phelps, David D.",D,0.6456
+IL,20,1,"Shimkus, John M.",R,0.631
+IN,1,1,"Visclosky, Peter J.",D,0.7155
+IN,2,0,"Pence, Mike",R,0.5087
+IN,3,1,"Roemer, Tim",D,0.5157
+IN,4,1,"Souder, Mark E.",R,0.6228
+IN,5,1,"Buyer, Steve",R,0.6086
+IN,6,1,"Burton, Dan",R,0.7035
+IN,7,0,"Kerns, Brian D.",R,0.648
+IN,8,1,"Hostettler, John N.",R,0.5265
+IN,9,1,"Hill, Baron",D,0.5419
+IN,10,1,"Carson, Julia M.",D,0.5851
+IA,1,1,"Leach, Jim",R,0.6179
+IA,2,1,"Nussle, Jim",R,0.5539
+IA,3,1,"Boswell, Leonard L.",D,0.628
+IA,4,1,"Ganske, Greg",R,0.6141
+IA,5,1,"Latham, Tom",R,0.6875
+KS,1,1,"Moran, Jerry",R,0.8934
+KS,2,1,"Ryun, Jim",R,0.6739
+KS,3,1,"Moore, Dennis",D,0.5005
+KS,4,1,"Tiahrt, Todd",R,0.5436
+KY,1,1,"Whitfield, Edward",R,0.5796
+KY,2,1,"Lewis, Ron",R,0.6772
+KY,3,1,"Northup, Ann Meagher",R,0.5287
+KY,4,1,"Lucas, Ken",D,0.5426
+KY,5,1,"Rogers, Harold ""Hal""",R,0.7355
+KY,6,1,"Fletcher, Ernie",R,0.528
+LA,1,1,"Vitter, David",R,0.8048
+LA,2,1,"Jefferson, William J.",D,1
+LA,3,1,"Tauzin, W. J. ""Billy""",R,0.7798
+LA,4,1,"McCrery, ""Jim""",R,0.7052
+LA,5,1,"Cooksey, John C.",R,0.6908
+LA,6,1,"Baker, Richard H.",R,0.6803
+LA,7,1,"John, Chris",D,0.8328
+ME,1,1,"Allen, Thomas H.",D,0.5981
+ME,2,1,"Baldacci, John E.",D,0.7343
+MD,1,1,"Gilchrest, Wayne T.",R,0.644
+MD,2,1,"Ehrlich, Robert L. Jr.",R,0.6856
+MD,3,1,"Cardin, Benjamin L.",D,0.7566
+MD,4,1,"Wynn, Albert R.",D,0.872
+MD,5,1,"Hoyer, Steny H.",D,0.6509
+MD,6,1,"Bartlett, Roscoe G.",R,0.6065
+MD,7,1,"Cummings, Elijah E.",D,0.8707
+MD,8,1,"Morella, Constance A.",R,0.52
+MA,1,1,"Olver, John W.",D,0.6824
+MA,2,1,"Neal, Richard E.",D,0.989
+MA,3,1,"McGovern, James P.",D,0.9884
+MA,4,1,"Frank, Barney",D,0.749
+MA,5,1,"Meehan, Martin T.",D,0.9802
+MA,6,1,"Tierney, John F.",D,0.7104
+MA,7,1,"Markey, Edward J.",D,0.9894
+MA,8,1,"Capuano, Michael E.",D,0.9928
+MA,9,1,"Moakley, John Joseph",D,0.7759
+MA,10,1,"Delahunt, William D.",D,0.7413
+MI,1,1,"Stupak, Bart",D,0.5838
+MI,2,1,"Hoekstra, Peter",R,0.6442
+MI,3,1,"Ehlers, Vernon",R,0.6499
+MI,4,1,"Camp, Dave",R,0.68
+MI,5,1,"Barcia, James A.",D,0.7429
+MI,6,1,"Upton, Fred",R,0.6792
+MI,7,1,"Smith, Nick",R,0.6115
+MI,8,0,"Rogers, Mike",R,0.4878
+MI,9,1,"Kildee, Dale E.",D,0.6109
+MI,10,1,"Bonior, David E.",D,0.6441
+MI,11,1,"Knollenberg, Joe",R,0.5576
+MI,12,1,"Levin, Sander",D,0.6433
+MI,13,1,"Rivers, Lynn Nancy",D,0.6467
+MI,14,1,"Conyers, John Jr.",D,0.8908
+MI,15,1,"Kilpatrick, Carolyn Cheeks",D,0.8857
+MI,16,1,"Dingell, John D.",D,0.7097
+MN,1,1,"Gutknecht, Gil",R,0.5643
+MN,2,0,"Kennedy, Mark",R,0.481
+MN,3,1,"Ramstad, Jim",R,0.6764
+MN,4,0,"McCollum, Betty",DFL,0.4804
+MN,5,1,"Sabo, Martin Olav",DFL,0.6923
+MN,6,1,"Luther, Bill",DFL,0.4956
+MN,7,1,"Peterson, Collin C.",DFL,0.6868
+MN,8,1,"Oberstar, James L.",DFL,0.6785
+MS,1,1,"Wicker, Roger F.",R,0.6983
+MS,2,1,"Thompson, Bennie G.",D,0.6507
+MS,3,1,"Pickering, Charles W. ""Chip""",R,0.7316
+MS,4,1,"Shows, Ronnie",D,0.5815
+MS,5,1,"Taylor, Gene",D,0.7884
+MO,1,0,"Clay, William Lacy",D,0.7521
+MO,2,0,"Akin, Todd",R,0.5533
+MO,3,1,"Gephardt, Richard A. (Dick)",D,0.5784
+MO,4,1,"Skelton, Ike",D,0.6693
+MO,5,1,"McCarthy, Karen",D,0.6885
+MO,6,0,"Graves, Samuel B. (Sam) Jr.",R,0.5085
+MO,7,1,"Blunt, Roy",R,0.7385
+MO,8,1,"Emerson, Jo Ann",R,0.6931
+MO,9,1,"Hulshof, Kenny",R,0.5925
+MT,1,0,"Rehberg, Dennis",R,0.515
+NE,1,1,"Bereuter, Doug",R,0.6625
+NE,2,1,"Terry, Lee",R,0.6581
+NE,3,0,"Osborne, Tom",R,0.82
+NV,1,1,"Berkley, Shelley",D,0.5168
+NV,2,1,"Gibbons, Jim",R,0.645
+NH,1,1,"Sununu, John E.",R,0.5287
+NH,2,1,"Bass, Charles",R,0.5619
+NJ,1,1,"Andrews, Robert E.",D,0.7619
+NJ,2,1,"LoBiondo, Frank A.",R,0.6636
+NJ,3,1,"Saxton, Jim",R,0.573
+NJ,4,1,"Smith, Christopher H.",R,0.632
+NJ,5,1,"Roukema, Marge",R,0.6537
+NJ,6,1,"Pallone, Frank Jr.",D,0.6752
+NJ,7,0,"Ferguson, Mike",R,0.5158
+NJ,8,1,"Pascrell, Bill Jr.",D,0.6699
+NJ,9,1,"Rothman, Steven R.",D,0.6793
+NJ,10,1,"Payne, Donald M.",D,0.8752
+NJ,11,1,"Frelinghuysen, Rodney P.",R,0.6797
+NJ,12,1,"Holt, Rush",D,0.4873
+NJ,13,1,"Menendez, Robert",D,0.7869
+NM,1,1,"Wilson, Heather A.",R,0.5034
+NM,2,1,"Skeen, Joe",R,0.5811
+NM,3,1,"Udall, Tom",D,0.6718
+NY,1,0,"Grucci, Felix J. Jr.",Combined,0.5552
+NY,2,0,"Isreal, Steve J.",D,0.4794
+NY,3,1,"King, Peter T.",Combined,0.5953
+NY,4,1,"McCarthy, Carolyn",Combined,0.6055
+NY,5,1,"Ackerman, Gary L.",Combined,0.6795
+NY,6,1,"Meeks, Gregory W.",Combined,1
+NY,7,1,"Crowley, Joseph",D,0.7168
+NY,8,1,"Nadler, Jerrold L.",Combined,0.8124
+NY,9,1,"Weiner, Anthony D.",Combined,0.6844
+NY,10,1,"Towns, Edolphus",Combined,0.9015
+NY,11,1,"Owens, Major R.",Combined,0.8701
+NY,12,1,"Velazquez, Nydia M.",Combined,0.8709
+NY,13,1,"Fossella, Vito J.",Combined,0.6457
+NY,14,1,"Maloney, Carolyn B.",Combined,0.7391
+NY,15,1,"Rangel, Charles B.",Combined,0.9188
+NY,16,1,"Serrano, Jose E.",Combined,0.9581
+NY,17,1,"Engel, Eliot L.",Combined,0.8971
+NY,18,1,"Lowey, Nita M.",D,0.6726
+NY,19,1,"Kelly, Sue W.",Combined,0.6085
+NY,20,1,"Gilman, Benjamin A.",R,0.5762
+NY,21,1,"McNulty, Michael R.",Combined,0.744
+NY,22,1,"Sweeney, John E.",Combined,0.679
+NY,23,1,"Boehlert, Sherwood L.",Combined,0.6054
+NY,24,1,"McHugh, John M.",Combined,0.7429
+NY,25,1,"Walsh, James T.",Combined,0.6896
+NY,26,1,"Hinchey, Maurice D.",Combined,0.6196
+NY,27,1,"Reynolds, Thomas M.",Combined,0.693
+NY,28,1,"Slaughter, Louise M.",D,0.6571
+NY,29,1,"LaFalce, John J.",Combined,0.6126
+NY,30,1,"Quinn, Jack",Combined,0.6712
+NY,31,1,"Houghton, Amo",Combined,0.7734
+NC,1,1,"Clayton, Eva M.",D,0.6564
+NC,2,1,"Etheridge, Bob",D,0.5826
+NC,3,1,"Jones, Walter B.",R,0.6144
+NC,4,1,"Price, David",D,0.6164
+NC,5,1,"Burr, Richard M.",R,0.9281
+NC,6,1,"Coble, Howard",R,0.91
+NC,7,1,"McIntyre, Mike",D,0.6975
+NC,8,1,"Hayes, Robert C. (Robin)",R,0.5502
+NC,9,1,"Myrick, Sue",R,0.6856
+NC,10,1,"Ballenger, T. Cass",R,0.6822
+NC,11,1,"Taylor, Charles H.",R,0.5506
+NC,12,1,"Watt, Mel",D,0.6482
+ND,0,1,"Pomeroy, Earl",DNL,0.5292
+OH,1,1,"Chabot, Steve",R,0.5297
+OH,2,1,"Portman, Rob",R,0.7357
+OH,3,1,"Hall, Tony P.",D,0.8296
+OH,4,1,"Oxley, Michael G.",R,0.6743
+OH,5,1,"Gillmor, Paul E.",R,0.698
+OH,6,1,"Strickland, Ted",D,0.5772
+OH,7,1,"Hobson, Dave",R,0.6757
+OH,8,1,"Boehner, John A.",R,0.7096
+OH,9,1,"Kaptur, Marcy",D,0.748
+OH,10,1,"Kucinich, Dennis J.",D,0.75
+OH,11,1,"Jones, Stephanie Tubbs",D,0.8468
+OH,12,0,"Tiberi, Pat",R,0.5287
+OH,13,1,"Brown, Sherrod",D,0.6459
+OH,14,1,"Sawyer, Thomas C.",D,0.6484
+OH,15,1,"Pryce, Deborah",R,0.675
+OH,16,1,"Regula, Ralph",R,0.6924
+OH,17,1,"Traficant, James A.",D,0.4996
+OH,18,1,"Ney, Bob",R,0.6441
+OH,19,1,"LaTourette, Steven C.",R,0.6925
+OK,1,1,"Largent, Steve",R,0.6926
+OK,2,0,"Carson, Brad",D,0.549
+OK,3,1,"Watkins, Wes",R,0.8656
+OK,4,1,"Watts, J.C. Jr.",R,0.6489
+OK,5,1,"Istook, Ernest",R,0.6844
+OK,6,1,"Lucas, Frank D.",R,0.5934
+OR,1,1,"Wu, David",D,0.5828
+OR,2,1,"Walden, Greg",R,0.7363
+OR,3,1,"Blumenauer, Earl",D,0.6677
+OR,4,1,"DeFazio, Peter A.",D,0.6802
+OR,5,1,"Hooley, Darlene",D,0.5677
+PA,1,1,"Brady, Robert A.",D,0.8825
+PA,2,1,"Fattah, Chaka",D,0.98
+PA,3,1,"Borski, Robert A.",D,0.6874
+PA,4,0,"Hart, Melissa",R,0.5899
+PA,5,1,"Peterson, John E.",R,0.8554
+PA,6,1,"Holden, Tim",D,0.6629
+PA,7,1,"Weldon, Curt",R,0.6481
+PA,8,1,"Greenwood, Jim",R,0.591
+PA,9,1,"Shuster, Bud",D/R,0.9942
+PA,10,1,"Sherwood, Don",R,0.5257
+PA,11,1,"Kanjorski, Paul E.",D,0.6642
+PA,12,1,"Murtha, John P.",D,0.7084
+PA,13,1,"Hoeffel, Joseph M.",D,0.5276
+PA,14,1,"Coyne, William J.",D,0.9985
+PA,15,1,"Toomey, Pat",R,0.5325
+PA,16,1,"Pitts, Joseph R.",R,0.6694
+PA,17,1,"Gekas, George W.",R,0.7151
+PA,18,1,"Doyle, Mike",D,0.694
+PA,19,0,"Platts, Todd",R,0.7253
+PA,20,1,"Mascara, Frank",D,0.6437
+PA,21,1,"English, Phil",R,0.6083
+PR,0,0,"Vila, Anibal S. Acevedo",PPD,0.4955
+RI,1,1,"Kennedy, Patrick J.",D,0.6667
+RI,2,0,"Langevin, James R.",D,0.6222
+SC,1,0,"Brown, Henry",R,0.6032
+SC,2,1,"Spence, Floyd",R,0.57
+SC,3,1,"Graham, Lindsey",R,0.6776
+SC,4,1,"DeMint, Jim",R,0.7957
+SC,5,1,"Spratt, John",D,0.5878
+SC,6,1,"Clyburn, James E. ""Jim""",D,0.7176
+SD,1,1,"Thune, John",R,0.7342
+TN,1,1,"Jenkins, William L. ""Bill""",R,0.9999
+TN,2,1,"Duncan, John J. Jr.",R,0.8934
+TN,3,1,"Wamp, Zach",R,0.6387
+TN,4,1,"Hilleary, Van",R,0.6576
+TN,5,1,"Clement, Bob",D,0.7249
+TN,6,1,"Gordon, Bart",D,0.621
+TN,7,1,"Bryant, Ed",R,0.6963
+TN,8,1,"Tanner, John",D,0.7226
+TN,9,1,"Ford, Harold Jr.",D,0.9997
+TX,1,1,"Sandlin, Max",D,0.5577
+TX,2,1,"Turner, Jim",D,0.9109
+TX,3,1,"Johnson, Sam",R,0.7159
+TX,4,1,"Hall, Ralph M.",D,0.6031
+TX,5,1,"Sessions, Pete",R,0.5404
+TX,6,1,"Barton, Joe",R,0.8811
+TX,7,0,"Culberson, John ",R,0.739
+TX,8,1,"Brady, Kevin",R,0.9163
+TX,9,1,"Lampson, Nick",D,0.592
+TX,10,1,"Doggett, Lloyd",D,0.8455
+TX,11,1,"Edwards, Chet",D,0.5483
+TX,12,1,"Granger, Kay",R,0.6266
+TX,13,1,"Thornberry, Mac",R,0.6763
+TX,14,1,"Paul, Ron",R,0.5971
+TX,15,1,"Hinojosa, Ruben",D,0.8848
+TX,16,1,"Reyes, Silvestre",D,0.683
+TX,17,1,"Stenholm, Charlie",D,0.5903
+TX,18,1,"Lee, Sheila Jackson",D,0.7649
+TX,19,1,"Combest, Larry",R,0.9162
+TX,20,1,"Gonzalez, Charles A.",D,0.8769
+TX,21,1,"Smith, Lamar",R,0.7587
+TX,22,1,"DeLay, Tom",R,0.6035
+TX,23,1,"Bonilla, Henry",R,0.5932
+TX,24,1,"Frost, Martin",D,0.6179
+TX,25,1,"Bentsen, Ken",D,0.6011
+TX,26,1,"Armey, Dick",R,0.7248
+TX,27,1,"Ortiz, Solomon P.",D,0.6338
+TX,28,1,"Rodriguez, Ciro D.",D,0.8904
+TX,29,1,"Green, Gene",D,0.7332
+TX,30,1,"Johnson, Eddie Bernice",D,0.9176
+UT,1,1,"Hansen, James V.",R,0.6898
+UT,2,0,"Matheson, Jim",D,0.5586
+UT,3,1,"Cannon, Chris",R,0.5854
+VT,0,1,"Sanders, Bernie",I,0.6921
+VI,0,1,"Christian-Christensen, Dr. Donna M.",D,0.7846
+VA,1,0,"Davis, Jo Ann S.",R,0.5754
+VA,2,0,"Schrock, Edward L. ""Ed""",R,0.5196
+VA,3,1,"Scott, Robert C. ""Bobby""",D,0.9771
+VA,4,1,"Sisisky, Norman",D,0.989
+VA,5,1,"Goode, Virgil H. Jr.",I,0.6738
+VA,6,1,"Goodlatte, Robert W. ""Bob""",R,0.9926
+VA,7,0,"Cantor, Eric I.",R,0.6692
+VA,8,1,"Moran, James P. Jr.",D,0.6334
+VA,9,1,"Boucher, Frederick C. ""Rick""",D,0.6984
+VA,10,1,"Wolf, Frank R.",R,0.842
+VA,11,1,"Davis, Thomas M. III",R,0.619
+WA,1,1,"Inslee, Jay",D,0.5455
+WA,2,0,"Larsen, Rick",D,0.5001
+WA,3,1,"Baird, Brian",D,0.564
+WA,4,1,"Hastings, Doc",R,0.6093
+WA,5,1,"Nethercutt, George R. Jr.",R,0.5734
+WA,6,1,"Dicks, Norm",D,0.6562
+WA,7,1,"McDermott, Jim",D,0.7278
+WA,8,1,"Dunn, Jennifer",R,0.6223
+WA,9,1,"Smith, Adam",D,0.6167
+WV,1,1,"Mollohan, Alan B.",D,0.8778
+WV,2,0,"Capito, Shelley Moore",R,0.4849
+WV,3,1,"Rahall, Nick Joe II",D,0.913
+WI,1,1,"Ryan, Paul D.",R,0.6657
+WI,2,1,"Baldwin, Tammy",D,0.5136
+WI,3,1,"Kind, Ron",D,0.6374
+WI,4,1,"Kleczka, Jerry",D,0.6077
+WI,5,1,"Barrett, Tom",D,0.7768
+WI,6,1,"Petri, Tom",R,0.6502
+WI,7,1,"Obey, David R.",D,0.6326
+WI,8,1,"Green, Mark",R,0.7462
+WI,9,1,"Sensenbrenner, F. James Jr.",R,0.7404
+WY,0,1,"Cubin, Barbara",R,0.6681
