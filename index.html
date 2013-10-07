@@ -36,10 +36,10 @@ var DELEGATES = {
 
 var percentage = d3.format('.0%');
 
-var width = 600,
+var width = 550,
     height = 220,
     margin = 50,
-    widthSvg = width + 2*margin,
+    widthSvg = 2*width + 3*margin,
     heightSvg = 2*height + 3*margin;
 
 var x = d3.scale.linear()
@@ -99,6 +99,14 @@ function isRepresentative(d) {
     return !(d.state in DELEGATES);
 }
 
+function democrat(d) {
+    return d.party[0] == 'D';
+}
+
+function republican(d) {
+    return d.party[0] == 'R';
+}
+
 function loadYear(year, cb) {
     d3.csv('data/'+year+'.csv', function(error, districts) {
         districts.forEach(cleanRecord);
@@ -109,6 +117,8 @@ function loadYear(year, cb) {
 
 var yearsIncumbent = [];
 var yearsNonincumbent = [];
+var yearsDemocrat = [];
+var yearsRepublican = [];
 var remainingYears = [];
 
 yearsToShow.forEach(function(i) {
@@ -130,6 +140,22 @@ yearsToShow.forEach(function(i) {
             year: d[0].year,
             cutoffs: cutoff
         });
+        percentile.domain(d.filter(democrat).map(function(r) { return r.result; } ));
+        var cutoff = percentile.quantiles();
+        cutoff.push(1);
+        cutoff.splice(0, null, 0);
+        yearsDemocrat.push({
+            year: d[0].year,
+            cutoffs: cutoff
+        });
+        percentile.domain(d.filter(republican).map(function(r) { return r.result; } ));
+        var cutoff = percentile.quantiles();
+        cutoff.push(1);
+        cutoff.splice(0, null, 0);
+        yearsRepublican.push({
+            year: d[0].year,
+            cutoffs: cutoff
+        });
         remainingYears.pop();
         checkComplete();
     });
@@ -144,18 +170,30 @@ function checkComplete() {
 
     var g = svg.append('g')
         .attr('transform', 'translate('+margin+','+margin+')');
-
     var g2 = svg.append('g')
         .attr('transform', 'translate('+margin+','+(height + 2*margin)+')');
+    var g3 = svg.append('g')
+        .attr('transform', 'translate('+(width + 2*margin)+','+margin+')');
+    var g4 = svg.append('g')
+        .attr('transform', 'translate('+(width + 2*margin)+','+(height + 2*margin)+')');
 
     g.append('clipPath')
         .attr('id', 'clip')
         .append('rect')
         .attr('width', width)
         .attr('height', height);
-
     g2.append('clipPath')
         .attr('id', 'clip2')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height);
+    g3.append('clipPath')
+        .attr('id', 'clip3')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height);
+    g4.append('clipPath')
+        .attr('id', 'clip4')
         .append('rect')
         .attr('width', width)
         .attr('height', height);
@@ -176,7 +214,27 @@ function checkComplete() {
         .attr('class', 'y axis')
         .call(yAxis);
 
+    g3.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,'+height+')')
+        .call(xAxis);
+    g3.append('g')
+        .attr('class', 'y axis')
+        .call(yAxis);
+
+    g4.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,'+height+')')
+        .call(xAxis);
+    g4.append('g')
+        .attr('class', 'y axis')
+        .call(yAxis);
+
     g.append('text')
+        .attr('x', width * 0.6)
+        .attr('y', height + 30)
+        .text('Share of vote obtained by representative');
+    g3.append('text')
         .attr('x', width * 0.6)
         .attr('y', height + 30)
         .text('Share of vote obtained by representative');
@@ -185,11 +243,18 @@ function checkComplete() {
         .attr('x', -margin * 0.7)
         .attr('y', -12)
         .text('Percent of incumbents receiving at least that share');
-
     g2.append('text')
         .attr('x', -margin * 0.7)
         .attr('y', -12)
         .text('Percent of non-incumbents receiving at least that share');
+    g3.append('text')
+        .attr('x', -margin * 0.7)
+        .attr('y', -12)
+        .text('Percent of Democrats receiving at least that share');
+    g4.append('text')
+        .attr('x', -margin * 0.7)
+        .attr('y', -12)
+        .text('Percent of Republicans receiving at least that share');
 
     g.selectAll('.distribution')
         .data(yearsIncumbent)
@@ -201,6 +266,22 @@ function checkComplete() {
 
     g2.selectAll('.distribution')
         .data(yearsNonincumbent)
+        .enter().append('path')
+        .attr('class', 'distribution')
+        .attr('clip-path', 'url(#clip)')
+        .attr('stroke', function(d){ return color(d.year); })
+        .attr('d', function(d){ return cdfLine(d.cutoffs); });
+
+    g3.selectAll('.distribution')
+        .data(yearsDemocrat)
+        .enter().append('path')
+        .attr('class', 'distribution')
+        .attr('clip-path', 'url(#clip)')
+        .attr('stroke', function(d){ return color(d.year); })
+        .attr('d', function(d){ return cdfLine(d.cutoffs); });
+
+    g4.selectAll('.distribution')
+        .data(yearsRepublican)
         .enter().append('path')
         .attr('class', 'distribution')
         .attr('clip-path', 'url(#clip)')
