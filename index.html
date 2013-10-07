@@ -61,7 +61,10 @@ years = {};
 for ( var i = 2000; i <= 2012; i += 2 ) {
     loadYear(i, function(d) {
         percentile.domain(d.map(function(r) { return r.result; } ));
-        years[d[0].year] = percentile.quantiles();
+        var cutoff = percentile.quantiles();
+        cutoff.push(1);
+        cutoff.splice(0, null, 0);
+        years[d[0].year] = cutoff;
     });
 }
 
