@@ -1,0 +1,22 @@
+=IF(TRIM(D2)&TRIM(E2)=TRIM(D1)&TRIM(E1),0,1)
+
+
+
+=IF(OR(TRIM(D2)&TRIM(E2)=TRIM(D1)&TRIM(E1),E2="H",E2="S",TRIM(E2)="",E2="S - FULL TERM",E2="S - UNEXPIRED TERM"),0,1)
+
+
+
+=IF(D1="(I)",1,0)
+
+
+
+=IF(J1="Unopposed",1,K1)
+
+
+=IF(J1="Unopposed",1,IF(O1<>"",O1,K1))
+
+
+state	district	incumbent		first_name	last_name	name	party	result
+
+
+
