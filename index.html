@@ -35,10 +35,10 @@ var DELEGATES = {
 var percentage = d3.format('.0%');
 
 var width = 600,
-    height = 250,
+    height = 220,
     margin = 50,
     widthSvg = width + 2*margin,
-    heightSvg = height + 2*margin;
+    heightSvg = 2*height + 3*margin;
 
 var x = d3.scale.linear()
     .domain([0.45, 1])
@@ -101,17 +101,26 @@ function loadYear(year, cb) {
     });
 }
 
-var years = [];
+var yearsIncumbent = [];
+var yearsNonincumbent = [];
 var remainingYears = [];
 
 for ( var i = 2000; i <= 2012; i += 2 ) {
     remainingYears.push(i);
     loadYear(i, function(d) {
-        percentile.domain(d.map(function(r) { return r.result; } ));
+        percentile.domain(d.filter(function(r) { return r.incumbent; }).map(function(r) { return r.result; } ));
         var cutoff = percentile.quantiles();
         cutoff.push(1);
         cutoff.splice(0, null, 0);
-        years.push({
+        yearsIncumbent.push({
+            year: d[0].year,
+            cutoffs: cutoff
+        });
+        percentile.domain(d.filter(function(r) { return !r.incumbent; }).map(function(r) { return r.result; } ));
+        var cutoff = percentile.quantiles();
+        cutoff.push(1);
+        cutoff.splice(0, null, 0);
+        yearsNonincumbent.push({
             year: d[0].year,
             cutoffs: cutoff
         });
@@ -123,14 +132,24 @@ for ( var i = 2000; i <= 2012; i += 2 ) {
 function checkComplete() {
     if ( remainingYears.length ) return;
 
-    var g = d3.select('body').append('svg')
+    var svg = d3.select('body').append('svg')
         .attr('width', widthSvg)
-        .attr('height', heightSvg)
-        .append('g')
+        .attr('height', heightSvg);
+
+    var g = svg.append('g')
         .attr('transform', 'translate('+margin+','+margin+')');
+
+    var g2 = svg.append('g')
+        .attr('transform', 'translate('+margin+','+(height + 2*margin)+')');
 
     g.append('clipPath')
         .attr('id', 'clip')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height);
+
+    g2.append('clipPath')
+        .attr('id', 'clip2')
         .append('rect')
         .attr('width', width)
         .attr('height', height);
@@ -140,6 +159,14 @@ function checkComplete() {
         .attr('transform', 'translate(0,'+height+')')
         .call(xAxis);
     g.append('g')
+        .attr('class', 'y axis')
+        .call(yAxis);
+
+    g2.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,'+height+')')
+        .call(xAxis);
+    g2.append('g')
         .attr('class', 'y axis')
         .call(yAxis);
 
@@ -154,7 +181,15 @@ function checkComplete() {
         .text('Percent of representatives receiving at least that share');
 
     g.selectAll('.distribution')
-        .data(years)
+        .data(yearsIncumbent)
+        .enter().append('path')
+        .attr('class', 'distribution')
+        .attr('clip-path', 'url(#clip)')
+        .attr('stroke', function(d){ return color(d.year); })
+        .attr('d', function(d){ return cdfLine(d.cutoffs); });
+
+    g2.selectAll('.distribution')
+        .data(yearsNonincumbent)
         .enter().append('path')
         .attr('class', 'distribution')
         .attr('clip-path', 'url(#clip)')
@@ -166,7 +201,7 @@ function checkComplete() {
         .attr('transform', 'translate('+(width*0.7)+','+(height*0.4)+')');
 
     var year = legend.selectAll('.year')
-        .data(years)
+        .data(yearsIncumbent)
         .enter().append('g')
         .attr('class', 'year')
         .attr('transform', function(d, i) { return 'translate(0,'+(i*12)+')'; });
