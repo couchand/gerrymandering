@@ -1,0 +1,441 @@
+state,district,incumbent,first_name,last_name,name,party,result
+AL,01,1,Jo,Bonner,"Bonner, Jo",REP,0.8258393535
+AL,02,0,Martha,Roby,"Roby, Martha",REP,0.5097293497
+AL,03,1,Mike,Rogers,"Rogers, Mike",REP,0.5942091158
+AL,04,1,Robert,Aderholt,"Aderholt, Robert",REP,0.9881747103
+AL,05,0,Mo,Brooks,"Brooks, Mo",REP,0.5788732394
+AL,06,1,Spencer,Bachus,"Bachus, Spencer",REP,0.9805315145
+AL,07,0,Terri A.,Sewell,"Sewell, Terri A.",DEM,0.724316992
+AK,00,1,Don,Young,"Young, Don",REP,0.6895787053
+AS,00,1,Eni F.H.,Faleomavaega,"Faleomavaega, Eni F.H.",DEM,0.5640510949
+AZ,01,0,Paul,Gosar,"Gosar, Paul",REP,0.4971663773
+AZ,02,1,Trent,Franks,"Franks, Trent",REP,0.6488456091
+AZ,03,0,Ben,Quayle,"Quayle, Ben",REP,0.522364962
+AZ,04,1,Ed,Pastor,"Pastor, Ed",DEM,0.6694158225
+AZ,05,0,David,Schweikert,"Schweikert, David",REP,0.5200188457
+AZ,06,1,Jeff,Flake,"Flake, Jeff",REP,0.6642353328
+AZ,07,1,Raúl M.,Grijalva,"Grijalva, Raúl M.",DEM,0.5022809531
+AZ,08,1,Gabrielle,Giffords,"Giffords, Gabrielle",DEM,0.4876259794
+AR,01,0,Rick,Crawford,"Crawford, Rick",REP,0.5178650787
+AR,02,0,Tim,Griffin,"Griffin, Tim",REP,0.5790364806
+AR,03,0,Steve,Womack,"Womack, Steve",REP,0.7243507554
+AR,04,1,Mike,Ross,"Ross, Mike",DEM,0.5752916344
+CA,01,1,Mike,Thompson,"Thompson, Mike",DEM,0.6279284886
+CA,02,1,Wally ,Herger,"Herger, Wally ",REP,0.5714903468
+CA,03,1,Dan,Lungren,"Lungren, Dan",REP,0.5007635395
+CA,04,1,Tom ,McClintock,"McClintock, Tom ",REP,0.612686496
+CA,05,1,Doris,Matsui,"Matsui, Doris",DEM,0.7204918508
+CA,06,1,Lynn C.,Woolsey,"Woolsey, Lynn C.",DEM,0.6594473716
+CA,07,1,George ,Miller,"Miller, George ",DEM,0.6825437636
+CA,08,1,Nancy,Pelosi,"Pelosi, Nancy",DEM,0.800725605
+CA,09,1,Barbara,Lee,"Lee, Barbara",DEM,0.8426559544
+CA,10,1,John,Garamendi,"Garamendi, John",DEM,0.588428013
+CA,11,1,Jerry,McNerney,"McNerney, Jerry",DEM,0.4796655343
+CA,12,1,Jackie ,Speier,"Speier, Jackie ",DEM,0.7558286356
+CA,13,1,Fortney Pete,Stark,"Stark, Fortney Pete",DEM,0.7195488447
+CA,14,1,Anna G.,Eshoo,"Eshoo, Anna G.",DEM,0.6909018637
+CA,15,1,Mike,Honda,"Honda, Mike",DEM,0.6759746001
+CA,16,1,Zoe,Lofgren,"Lofgren, Zoe",DEM,0.6782157916
+CA,17,1,Sam,Farr,"Farr, Sam",DEM,0.6665244556
+CA,18,1,Dennis,Cardoza,"Cardoza, Dennis",DEM,0.5848405301
+CA,19,0,Jeff,Denham,"Denham, Jeff",REP,0.6455138712
+CA,20,1,Jim,Costa,"Costa, Jim",DEM,0.5170497742
+CA,21,1,Devin G.,Nunes,"Nunes, Devin G.",REP,1
+CA,22,1,Kevin,McCarthy,"McCarthy, Kevin",REP,0.9876297228
+CA,23,1,Lois,Capps,"Capps, Lois",DEM,0.5777228721
+CA,24,1,Elton,Gallegly,"Gallegly, Elton",REP,0.5993950086
+CA,25,1,"Howard P. ""Buck""",McKeon,"McKeon, Howard P. ""Buck""",REP,0.618325877
+CA,26,1,David,Dreier,"Dreier, David",REP,0.5412796921
+CA,27,1,Brad,Sherman,"Sherman, Brad",DEM,0.6515068077
+CA,28,1,Howard L. ,Berman,"Berman, Howard L. ",DEM,0.6953590282
+CA,29,1,Adam B.,Schiff,"Schiff, Adam B.",DEM,0.647778757
+CA,30,1,Henry A.,Waxman,"Waxman, Henry A.",DEM,0.6463299221
+CA,31,1,Xavier,Becerra,"Becerra, Xavier",DEM,0.8381775075
+CA,32,1,Judy,Chu,"Chu, Judy",DEM,0.7104133168
+CA,33,0,Karen,Bass,"Bass, Karen",DEM,0.8608062191
+CA,34,1,Lucille,Roybal-Allard,"Roybal-Allard, Lucille",DEM,0.7722926569
+CA,35,1,Maxine,Waters,"Waters, Maxine",DEM,0.7933367827
+CA,36,1,Jane,Harman,"Harman, Jane",DEM,0.5961881949
+CA,37,1,Laura,Richardson,"Richardson, Laura",DEM,0.6835593301
+CA,38,1,Grace F.,Napolitano,"Napolitano, Grace F.",DEM,0.7345498616
+CA,39,1,Linda T.,Sanchez,"Sanchez, Linda T.",DEM,0.6326718931
+CA,40,1,Ed,Royce,"Royce, Ed",REP,0.6678873948
+CA,41,1,Jerry,Lewis,"Lewis, Jerry",REP,0.6320605479
+CA,42,1,Gary G.,Miller,"Miller, Gary G.",REP,0.6221244826
+CA,43,1,Joe,Baca,"Baca, Joe",DEM,0.6549627745
+CA,44,1,Ken,Calvert,"Calvert, Ken",REP,0.5561350677
+CA,45,1,Mary Bono,Mack,"Mack, Mary Bono",REP,0.5148524427
+CA,46,1,Dana,Rohrabacher,"Rohrabacher, Dana",REP,0.6220337927
+CA,47,1,Loretta,Sanchez,"Sanchez, Loretta",DEM,0.5297538404
+CA,48,1,John,Campbell,"Campbell, John",REP,0.5993803534
+CA,49,1,Darrell,Issa,"Issa, Darrell",REP,0.6278462861
+CA,50,1,Brian P.,Bilbray,"Bilbray, Brian P.",REP,0.5665382884
+CA,51,1,Bob,Filner,"Filner, Bob",DEM,0.6005100197
+CA,52,1,Duncan D.,Hunter,"Hunter, Duncan D.",REP,0.6308637396
+CA,53,1,Susan A.,Davis,"Davis, Susan A.",DEM,0.6225939832
+CO,01,1,Diana,DeGette,"DeGette, Diana",DEM,0.6742350217
+CO,02,1,Jared,Polis,"Polis, Jared",DEM,0.5741366801
+CO,03,0,Scott R.,Tipton,"Tipton, Scott R.",REP,0.4987003017
+CO,04,0,Cory,Gardner,"Gardner, Cory",REP,0.5247690031
+CO,05,1,Doug,Lamborn,"Lamborn, Doug",REP,0.6575156819
+CO,06,1,Mike,Coffman,"Coffman, Mike",REP,0.6567241728
+CO,07,1,Ed,Perlmutter,"Perlmutter, Ed",DEM,0.5344480812
+CT,01,1,John B.,Larson,"Larson, John B.",DEM,0.6124633911
+CT,02,1,Joe,Courtney,"Courtney, Joe",DEM,0.598632951
+CT,03,1,Rosa L.,DeLauro,"DeLauro, Rosa L.",DEM,0.6506133843
+CT,04,1,Jim,Himes,"Himes, Jim",DEM,0.5306153429
+CT,05,1,Chris,Murphy,"Murphy, Chris",DEM,0.5405955927
+DE,00,0,"John C., Jr.",Carney,"Carney, John C., Jr.",DEM,0.5678094204
+DC,00,1,Eleanor Holmes,Norton,"Norton, Eleanor Holmes",DEM,0.8894433723
+FL,01,1,Jeff,Miller,"Miller, Jeff",REP,0.8000009367
+FL,02,0,Steve,Southerland,"Southerland, Steve",REP,0.53596947
+FL,03,1,Corinne,Brown,"Brown, Corinne",DEM,0.6303617408
+FL,04,1,Ander,Crenshaw,"Crenshaw, Ander",REP,0.7721111568
+FL,05,0,"Richard B. ""Rich""",Nugent,"Nugent, Richard B. ""Rich""",REP,0.6743080604
+FL,06,1,"Clifford B. ""Cliff""",Stearns,"Stearns, Clifford B. ""Cliff""",REP,0.7145919412
+FL,07,1,John L.,Mica,"Mica, John L.",REP,0.6903110066
+FL,08,0,Daniel,Webster,"Webster, Daniel",REP,0.5611321988
+FL,09,1,Gus Michael,Bilirakis,"Bilirakis, Gus Michael",REP,0.714332595
+FL,10,1,C.W. Bill,Young,"Young, C.W. Bill",REP,0.6592069045
+FL,11,1,Kathy,Castor,"Castor, Kathy",DEM,0.5963498645
+FL,12,0,Dennis A.,Ross,"Ross, Dennis A.",REP,0.4814325224
+FL,13,1,Vern,Buchanan,"Buchanan, Vern",REP,0.6886009276
+FL,14,1,Connie,Mack,"Mack, Connie",REP,0.6856467813
+FL,15,1,Bill,Posey,"Posey, Bill",REP,0.6472840106
+FL,16,1,Tom,Rooney,"Rooney, Tom",REP,0.6684914917
+FL,17,0,Frederica S.,Wilson,"Wilson, Frederica S.",DEM,0.8621301775
+FL,18,1,Ileana,Ros-Lehtinen,"Ros-Lehtinen, Ileana",REP,0.6888522494
+FL,19,1,Ted,Deutch,"Deutch, Ted",DEM,0.6258818624
+FL,20,1,Debbie Wasserman,Schultz,"Schultz, Debbie Wasserman",DEM,0.6014620756
+FL,21,0,Mario,Diaz-Balart,"Diaz-Balart, Mario",REP,1
+FL,22,0,Allen,West,"West, Allen",REP,0.5436363138
+FL,23,1,Alcee L.,Hastings,"Hastings, Alcee L.",DEM,0.7911606578
+FL,24,0,"Sandra ""Sandy""",Adams,"Adams, Sandra ""Sandy""",REP,0.596369439
+FL,25,0,David,Rivera,"Rivera, David",REP,0.5214729055
+GA,01,1,Jack,Kingston,"Kingston, Jack",REP ,0.7162882744
+GA,02,1,Sanford,Bishop,"Bishop, Sanford",DEM,0.514409042
+GA,03,1,Lynn,Westmoreland,"Westmoreland, Lynn",REP ,0.6947849025
+GA,04,1,"Hank, Jr.",Johnson,"Johnson, Hank, Jr.",DEM,0.746655182
+GA,05,1,John,Lewis,"Lewis, John",DEM,0.7371987103
+GA,06,1,Tom,Price,"Price, Tom",REP ,0.9990518841
+GA,07,0,Rob,Woodall,"Woodall, Rob",REP ,0.6707045612
+GA,08,0,Austin,Scott,"Scott, Austin",REP ,0.5269715927
+GA,09,1,Tom,Graves,"Graves, Tom",REP ,1
+GA,10,1,Paul,Broun,"Broun, Paul",REP ,0.6735816009
+GA,11,1,Phil,Gingrey,"Gingrey, Phil",REP ,1
+GA,12,1,John,Barrow,"Barrow, John",DEM,0.5658549423
+GA,13,1,David,Scott,"Scott, David",DEM,0.6943013387
+GU,00,1,Madeleine Z.,Bordallo,"Bordallo, Madeleine Z.",DEM,0.9598621095
+HI,01,0,Colleen ,Hanabusa,"Hanabusa, Colleen ",DEM,0.5322763947
+HI,02,1,Mazie,Hirono,"Hirono, Mazie",DEM,0.7218784446
+ID,01,0,Raul R.,Labrador,"Labrador, Raul R.",REP,0.5101747182
+ID,02,1,Mike,Simpson,"Simpson, Mike",REP,0.6883139643
+IL,01,1,Bobby L.,Rush,"Rush, Bobby L.",DEM,0.8035859555
+IL,02,1,"Jesse L., Jr.",Jackson,"Jackson, Jesse L., Jr.",DEM,0.8052139616
+IL,03,1,Daniel William,Lipinski,"Lipinski, Daniel William",DEM,0.6968858588
+IL,04,1,Luis V.,Gutierrez,"Gutierrez, Luis V.",DEM,0.7735842136
+IL,05,1,Mike,Quigley,"Quigley, Mike",DEM,0.7062273927
+IL,06,1,Peter J.,Roskam,"Roskam, Peter J.",REP,0.6364500792
+IL,07,1,Danny K.,Davis,"Davis, Danny K.",DEM,0.8150493068
+IL,08,0,Joe ,Walsh,"Walsh, Joe ",REP,0.4846740929
+IL,09,1,Janice D.,Schakowsky,"Schakowsky, Janice D.",DEM,0.6633654427
+IL,10,0,Robert,Dold,"Dold, Robert",REP,0.5108022971
+IL,11,0,Adam,Kinzinger,"Kinzinger, Adam",REP,0.5734896303
+IL,12,1,Jerry F.,Costello,"Costello, Jerry F.",DEM,0.5982684196
+IL,13,1,Judy,Biggert,"Biggert, Judy",REP,0.638102788
+IL,14,0,"Randall M. ""Randy""",Hultgren,"Hultgren, Randall M. ""Randy""",REP,0.5130700004
+IL,15,1,Timothy V.,Johnson,"Johnson, Timothy V.",REP,0.6432071332
+IL,16,1,Donald A.,Manzullo,"Manzullo, Donald A.",REP,0.6500204455
+IL,17,0,Bobby,Schilling,"Schilling, Bobby",REP,0.5258122254
+IL,18,1,Aaron,Schock,"Schock, Aaron",REP,0.6911787313
+IL,19,1,John M.,Shimkus,"Shimkus, John M.",REP,0.7122478547
+IN,01,1,Peter J. ,Visclosky,"Visclosky, Peter J. ",DEM,0.5856387774
+IN,02,1,Joe,Donnelly,"Donnelly, Joe",DEM,0.4817791984
+IN,03,0,Marlin A. ,Stutzman,"Stutzman, Marlin A. #",REP,0.6276175499
+IN,04,0,Todd,Rokita,"Rokita, Todd",REP,0.6856990342
+IN,05,1,Dan,Burton,"Burton, Dan",REP,0.6213817696
+IN,06,1,Mike,Pence,"Pence, Mike",REP,0.6657211226
+IN,07,1,Andre D.,Carson,"Carson, Andre D.",DEM,0.5889591137
+IN,08,0,Larry D. ,Bucshon,"Bucshon, Larry D. ",REP,0.5744204581
+IN,09,0,Todd,Young,"Young, Todd",REP,0.5233847082
+IA,01,1,Bruce,Braley,"Braley, Bruce",DEM,0.4951494059
+IA,02,1,Dave ,Loebsack,"Loebsack, Dave ",DEM,0.5099108617
+IA,03,1,Leonard L. ,Boswell,"Boswell, Leonard L. ",DEM,0.5073476881
+IA,04,1,Tom ,Latham,"Latham, Tom ",REP,0.656238845
+IA,05,1,Steve  ,King,"King, Steve  ",REP,0.6574659776
+KS,01,0,Tim ,Huelskamp,"Huelskamp, Tim ",REP ,0.7376429601
+KS,02,1,Lynn ,Jenkins,"Jenkins, Lynn ",REP ,0.631309625
+KS,03,0,Kevin ,Yoder,"Yoder, Kevin ",REP ,0.5840324067
+KS,04,0,Mike ,Pompeo,"Pompeo, Mike ",REP ,0.5879301613
+KY,01,1,Edward ,Whitfield,"Whitfield, Edward ",REP,0.7124531098
+KY,02,1,S. Brett,Guthrie,"Guthrie, S. Brett",REP,0.6788704796
+KY,03,1,John,Yarmuth,"Yarmuth, John",DEM,0.5467901379
+KY,04,1,Geoff,Davis,"Davis, Geoff",REP,0.6947740805
+KY,05,1,"Harold ""Hal""",Rogers,"Rogers, Harold ""Hal""",REP,0.7742459742
+KY,06,1,Ben,Chandler,"Chandler, Ben",DEM,0.5008381301
+LA,01,1,"""Steve""",Scalise,"Scalise, ""Steve""",REP,0.7852190073
+LA,02,0,Cedric,Richmond,"Richmond, Cedric",DEM,0.6458519799
+LA,03,0,"""Jeff"" ",Landry,"Landry, ""Jeff"" ",REP,0.6376692007
+LA,04,1,John,Fleming,"Fleming, John",REP,0.6233811628
+LA,05,1,Rodney ,Alexander,"Alexander, Rodney ",REP,0.7857280828
+LA,06,1,"William ""Bill""",Cassidy,"Cassidy, William ""Bill""",REP,0.6563328661
+LA,07,1,"Charles W., Jr.",Boustany,"Boustany, Charles W., Jr.",REP,1
+ME,01,1,Chellie,Pingree,"Pingree, Chellie",DEM,0.5681505894
+ME,02,1,Michael H.,Michaud,"Michaud, Michael H.",DEM,0.5513158437
+MD,01,0,Andy,Harris,"Harris, Andy",REP,0.5408351115
+MD,02,1,C.A. Dutch,Ruppersberger,"Ruppersberger, C.A. Dutch",DEM,0.6420796155
+MD,03,1,John,Sarbanes,"Sarbanes, John",DEM,0.6107302768
+MD,04,1,Donna,Edwards,"Edwards, Donna",DEM,0.8344339131
+MD,05,1,Steny H.,Hoyer,"Hoyer, Steny H.",DEM,0.642588749
+MD,06,1,Roscoe G.,Bartlett,"Bartlett, Roscoe G.",REP,0.6144787748
+MD,07,1,Elijah,Cummings,"Cummings, Elijah",DEM,0.7518122008
+MD,08,1,Chris,Van Hollen,"Van Hollen, Chris",DEM,0.7326522533
+MA,01,1,John W.,Olver,"Olver, John W.",DEM,0.5999653175
+MA,02,1,Richard E.,Neal,"Neal, Richard E.",DEM,0.5732706282
+MA,03,1,James P.,McGovern,"McGovern, James P.",DEM,0.5645588722
+MA,04,1,Barney,Frank,"Frank, Barney",DEM,0.5389980652
+MA,05,1,Nicola S.,Tsongas,"Tsongas, Nicola S.",DEM,0.5484022158
+MA,06,1,John F.,Tierney,"Tierney, John F.",DEM,0.568469936
+MA,07,1,Edward J.,Markey,"Markey, Edward J.",DEM,0.6641958087
+MA,08,1,Michael E.,Capuano,"Capuano, Michael E.",DEM,0.9804881592
+MA,09,1,Stephen F.,Lynch,"Lynch, Stephen F.",DEM,0.6830242995
+MA,10,0,William R.,Keating,"Keating, William R.",DEM,0.4687302478
+MI,01,0,Dan,Benishek,"Benishek, Dan",REP,0.5194128523
+MI,02,0,Bill,Huizenga,"Huizenga, Bill",REP,0.6526889924
+MI,03,0,Justin,Amash,"Amash, Justin",REP,0.5967696585
+MI,04,1,Dave,Camp,"Camp, Dave",REP,0.6620385641
+MI,05,1,Dale,Kildee,"Kildee, Dale",DEM,0.5304282049
+MI,06,1,Fred,Upton,"Upton, Fred",REP,0.6197507751
+MI,07,0,Tim,Walberg,"Walberg, Tim",REP,0.5015531597
+MI,08,1,Mike,Rogers,"Rogers, Mike",REP,0.6408119431
+MI,09,1,Gary,Peters,"Peters, Gary",DEM,0.4976449634
+MI,10,1,Candice S.,Miller,"Miller, Candice S.",REP,0.7197195742
+MI,11,1,Thaddeus G.,McCotter,"McCotter, Thaddeus G.",REP,0.5926634688
+MI,12,1,Sander,Levin,"Levin, Sander",DEM,0.6107820515
+MI,13,0,Hansen,Clarke,"Clarke, Hansen",DEM,0.793894992
+MI,14,1,"John, Jr.",Conyers,"Conyers, John, Jr.",DEM,0.7676271614
+MI,15,1,John D.,Dingell,"Dingell, John D.",DEM,0.5680791516
+MN,01,1,Tim,Walz,"Walz, Tim",DFL,0.4933973105
+MN,02,1,John,Kline,"Kline, John",REP,0.6330567318
+MN,03,1,Erik,Paulsen,"Paulsen, Erik",REP,0.5880397823
+MN,04,1,Betty,McCollum,"McCollum, Betty",DFL,0.5908843432
+MN,05,1,Keith,Ellison,"Ellison, Keith",DFL,0.6768774099
+MN,06,1,Michele,Bachmann,"Bachmann, Michele",REP,0.5251258681
+MN,07,1,Collin C.,Peterson,"Peterson, Collin C.",DFL,0.5520433684
+MN,08,0,Chip,Cravaack,"Cravaack, Chip",REP,0.4817724781
+MS,01,0, Alan ,Nunnelee,"Nunnelee,  Alan ",REP,0.5526146431
+MS,02,1,Bennie G,Thompson,"Thompson, Bennie G",DEM,0.6146677093
+MS,03,1,Gregg,Harper,"Harper, Gregg",REP,0.6799287167
+MS,04,0,Steven,Palazzo,"Palazzo, Steven",REP,0.5192788027
+MO,01,1,Lacy,Clay,"Clay, Lacy",DEM,0.73551107
+MO,02,1,Todd,Akin,"Akin, Todd",REP,0.6794399771
+MO,03,1,Russ,Carnahan,"Carnahan, Russ",DEM,0.4894403821
+MO,04,0,Vicky,Hartzler,"Hartzler, Vicky",REP,0.5042700483
+MO,05,1,"Emanuel, II",Cleaver,"Cleaver, Emanuel, II",DEM,0.5332483557
+MO,06,1,Sam,Graves,"Graves, Sam",REP,0.6944329284
+MO,07,0,Billy,Long,"Long, Billy",REP,0.6339494045
+MO,08,1,Jo Ann,Emerson,"Emerson, Jo Ann",REP,0.6556104878
+MO,09,1,Blaine,Luetkemeyer,"Luetkemeyer, Blaine",REP,0.7735574592
+MT,00,1,Denny,Rehberg,"Rehberg, Denny",REP,0.6041388574
+NE,01,1,Jeff,Fortenberry,"Fortenberry, Jeff",REP,0.7127280045
+NE,02,1,Lee,Terry,"Terry, Lee",REP,0.6080634501
+NE,03,1,Adrian,Smith,"Smith, Adrian",REP,0.7012251634
+NV,01,1,Shelley,Berkley,"Berkley, Shelley",DEM,0.6174778417
+NV,02,1,Dean ,Heller,"Heller, Dean ",REP,0.632995652
+NV,03,0,Joe,Heck,"Heck, Joe",REP,0.4812561129
+NH,01,0,Frank C. ,Guinta,"Guinta, Frank C. ",REP,0.5396743012
+NH,02,0,Charles ,Bass,"Bass, Charles ",REP,0.4824923812
+NJ,01,1,Robert E.,Andrews,"Andrews, Robert E.",DEM,0.6319361491
+NJ,02,1,Frank A. ,LoBiondo,"LoBiondo, Frank A. ",REP,0.6549784586
+NJ,03,0,Jon,Runyan,"Runyan, Jon",REP,0.5002746143
+NJ,04,1,Christopher H.,Smith,"Smith, Christopher H.",REP,0.694091089
+NJ,05,1,Scott,Garrett,"Garrett, Scott",REP,0.6493955276
+NJ,06,1,"Frank, Jr.",Pallone,"Pallone, Frank, Jr.",DEM,0.5474535954
+NJ,07,1,Leonard,Lance,"Lance, Leonard",REP,0.5937418779
+NJ,08,1,"Bill, Jr.",Pascrell,"Pascrell, Bill, Jr.",DEM,0.6265792306
+NJ,09,1,Steven R.,Rothman,"Rothman, Steven R.",DEM,0.6071817825
+NJ,10,1,Donald M.,Payne,"Payne, Donald M.",DEM,0.8518194088
+NJ,11,1,Rodney P.,Frelinghuysen,"Frelinghuysen, Rodney P.",REP,0.6718866887
+NJ,12,1,Rush,Holt,"Holt, Rush",DEM,0.5304555838
+NJ,13,1,Albio ,Sires,"Sires, Albio ",DEM,0.7410726921
+NM,01,1,Martin T.,Heinrich,"Heinrich, Martin T.",DEM,0.5187894131
+NM,02,0,Steve,Pearce,"Pearce, Steve",REP,0.5540285812
+NM,03,1,Ben R.,Lujan,"Lujan, Ben R.",DEM,0.5698601658
+NY,01,1,Timothy H.,Bishop,"Bishop, Timothy H.",DEM,0.5011928794
+NY,02,1,Steve J.,Israel,"Israel, Steve J.",DEM,0.5633295062
+NY,03,1,Peter T.,King,"King, Peter T.",REP,0.7191881455
+NY,04,1,Carolyn,McCarthy,"McCarthy, Carolyn",DEM,0.5360646344
+NY,05,1,Gary L.,Ackerman,"Ackerman, Gary L.",DEM,0.6304512886
+NY,06,1,Gregory W.,Meeks,"Meeks, Gregory W.",DEM,0.8773326185
+NY,07,1,Joseph,Crowley,"Crowley, Joseph",DEM,0.8053147359
+NY,08,1,Jerrold L.,Nadler,"Nadler, Jerrold L.",DEM,0.7549110962
+NY,09,1,Anthony D.,Weiner,"Weiner, Anthony D.",DEM,0.6080577106
+NY,10,1,Edolphus,Towns,"Towns, Edolphus",DEM,0.9107774778
+NY,11,1,Yvette D.,Clarke,"Clarke, Yvette D.",DEM,0.9053637618
+NY,12,1,Nydia M.,Velazquez,"Velazquez, Nydia M.",DEM,0.9379348049
+NY,13,0,Michael G.,Grimm,"Grimm, Michael G.",REP,0.5128156596
+NY,14,1,Carolyn B.,Maloney,"Maloney, Carolyn B.",DEM,0.7503180884
+NY,15,1,Charles B.,Rangel,"Rangel, Charles B.",DEM,0.8024294988
+NY,16,1,Jose E.,Serrano,"Serrano, Jose E.",DEM,0.956609454
+NY,17,1,Eliot L.,Engel,"Engel, Eliot L.",DEM,0.7284938226
+NY,18,1,Nita M.,Lowey,"Lowey, Nita M.",DEM,0.6212768473
+NY,19,0,Nan,Hayworth,"Hayworth, Nan",REP,0.5255068391
+NY,20,0,Christopher P.,Gibson,"Gibson, Christopher P.",REP,0.5484512454
+NY,21,1,Paul D.,Tonko,"Tonko, Paul D.",DEM,0.5924778572
+NY,22,1,Maurice D.,Hinchey,"Hinchey, Maurice D.",DEM,0.5264137957
+NY,23,1,William L.,Owens,"Owens, William L.",DEM,0.4750795824
+NY,24,0,Richard L.,Hanna,"Hanna, Richard L.",REP,0.529989567
+NY,25,0,Ann Marie,Buerkle,"Buerkle, Ann Marie",REP,0.5011258348
+NY,26,1,Christopher J.,Lee,"Lee, Christopher J.",REP,0.7358859114
+NY,27,1,Brian,Higgins,"Higgins, Brian",DEM,0.6093953893
+NY,28,1,Louise M.,Slaughter,"Slaughter, Louise M.",DEM,0.6490405009
+NY,29,0,"Thomas W., II",Reed,"Reed, Thomas W., II",REP,0.5645621796
+NC,01,1,G. K.,Butterfield,"Butterfield, G. K.",DEM,0.593094895
+NC,02,0,Renee,Ellmers,"Ellmers, Renee",REP,0.4946726106
+NC,03,1,Walter B.,Jones,"Jones, Walter B.",REP,0.7186258178
+NC,04,1,David,Price,"Price, David",DEM,0.5716177639
+NC,05,1,Virginia,Foxx,"Foxx, Virginia",REP,0.6588540324
+NC,06,1,Howard,Coble,"Coble, Howard",REP,0.7520829423
+NC,07,1,Mike,McIntyre,"McIntyre, Mike",DEM,0.5368113621
+NC,08,1,Larry,Kissell,"Kissell, Larry",DEM,0.5301895582
+NC,09,1,Sue,Myrick,"Myrick, Sue",REP,0.689671647
+NC,10,1,Patrick,McHenry,"McHenry, Patrick",REP,0.7117719074
+NC,11,1,Heath,Shuler,"Shuler, Heath",DEM,0.543439999
+NC,12,1,Mel,Watt,"Watt, Mel",DEM,0.6388304209
+NC,13,1,Brad,Miller,"Miller, Brad",DEM,0.5549803539
+ND,00,0,Rick,Berg,"Berg, Rick",REP,0.5473713507
+MP,00,1,Gregorio Kilili Camacho,Sablan,"Sablan, Gregorio Kilili Camacho",IND,0.4274136716
+OH,01,0,Steve,Chabot,"Chabot, Steve",REP,0.5149415933
+OH,02,1,Jean,Schmidt,"Schmidt, Jean",REP,0.5845277387
+OH,03,1,Mike,Turner,"Turner, Mike",REP,0.6811240428
+OH,04,1,Jim,Jordan,"Jordan, Jim",REP,0.7148822637
+OH,05,1,Bob,Latta,"Latta, Bob",REP,0.6782403725
+OH,06,0,Bill,Johnson,"Johnson, Bill",REP,0.5018606348
+OH,07,1,Steve,Austria,"Austria, Steve",REP,0.6216807978
+OH,08,1,John A.,Boehner,"Boehner, John A.",REP,0.6564276385
+OH,09,1,Marcy,Kaptur,"Kaptur, Marcy",DEM,0.5935383596
+OH,10,1,Dennis J.,Kucinich,"Kucinich, Dennis J.",DEM,0.5305194057
+OH,11,1,Marcia L.,Fudge,"Fudge, Marcia L.",DEM,0.8292994236
+OH,12,1,Pat,Tiberi,"Tiberi, Pat",REP,0.5578534809
+OH,13,1,Betty,Sutton,"Sutton, Betty",DEM,0.5573219873
+OH,14,1,Steven C.,LaTourette,"LaTourette, Steven C.",REP,0.6492019145
+OH,15,0,Steve,Stivers,"Stivers, Steve",REP,0.541582803
+OH,16,0,Jim,Renacci,"Renacci, Jim",REP,0.520821125
+OH,17,1,Timothy J.,Ryan,"Ryan, Timothy J.",DEM,0.5389424439
+OH,18,0,Bob,Gibbs,"Gibbs, Bob",REP,0.5386165818
+OK,01,1,John,Sullivan,"Sullivan, John",REP,0.7680423108
+OK,02,1,Dan,Boren,"Boren, Dan",DEM,0.5652382868
+OK,03,1,Frank D.,Lucas,"Lucas, Frank D.",REP,0.7799350724
+OK,04,1,Tom,Cole,"Cole, Tom",REP,1
+OK,05,0,James,Lankford,"Lankford, James",REP,0.6252302072
+OR,01,1,David,Wu,"Wu, David",DEM,0.5474635467
+OR,02,1,Greg,Walden,"Walden, Greg",REP,0.7391313697
+OR,03,1,Earl,Blumenauer,"Blumenauer, Earl",DEM,0.7001544586
+OR,04,1,Peter A.,DeFazio,"DeFazio, Peter A.",DEM/PRO/WF,0.5449250466
+OR,05,1,Kurt,Schrader,"Schrader, Kurt",DEM,0.5124878331
+PA,01,1,Robert A.,Brady,"Brady, Robert A.",DEM,0.7324810583
+PA,02,1,Chaka,Fattah,"Fattah, Chaka",DEM,0.8929836303
+PA,03,0,Mike ,Kelly,"Kelly, Mike ",REP,0.5572241614
+PA,04,1,Jason,Altmire,"Altmire, Jason",DEM,0.5081355006
+PA,05,1,Glenn,Thompson,"Thompson, Glenn",REP,0.6868935702
+PA,06,1,Jim,Gerlach,"Gerlach, Jim",REP,0.5710248738
+PA,07,0,Patrick  ,Meehan,"Meehan, Patrick  ",REP,0.5494385024
+PA,08,0,Michael G.,Fitzpatrick,"Fitzpatrick, Michael G.",REP,0.5352263145
+PA,09,1,Bill,Shuster,"Shuster, Bill",REP,0.7306127913
+PA,10,0,Thomas A.,Marino,"Marino, Thomas A.",REP,0.5517673177
+PA,11,0,Louis J. ,Barletta,"Barletta, Louis J. ",REP,0.5470055729
+PA,12,1,Mark S.,Critz #,"Critz, Mark S. #",DEM,0.507790483
+PA,13,1,Allyson Y.,Schwartz,"Schwartz, Allyson Y.",DEM,0.5634157107
+PA,14,1,Mike ,Doyle,"Doyle, Mike ",DEM,0.6878514679
+PA,15,1,Charles W.,Dent,"Dent, Charles W.",REP,0.5354928916
+PA,16,1,Joseph R.,Pitts,"Pitts, Joseph R.",REP,0.6538684687
+PA,17,1,Tim,Holden,"Holden, Tim",DEM,0.5550059489
+PA,18,1,Tim,Murphy,"Murphy, Tim",REP,0.6732821507
+PA,19,1,Todd,Platts,"Platts, Todd",REP,0.7191063563
+RI,01,0,David N.,Cicilline,"Cicilline, David N.",DEM,0.5060241714
+RI,02,1,James R.,Langevin,"Langevin, James R.",DEM,0.5986449927
+SC,01,0,Tim,Scott,"Scott, Tim",REP,0.6536511265
+SC,02,1,Joe,Wilson,"Wilson, Joe",REP,0.5347553837
+SC,03,0,Jeff,Duncan,"Duncan, Jeff",REP,0.6245918024
+SC,04,0,Trey,Gowdy,"Gowdy, Trey",REP,0.6345105563
+SC,05,0,Mick,Mulvaney,"Mulvaney, Mick",REP,0.5512120761
+SC,06,1,"James E. ""Jim""",Clyburn,"Clyburn, James E. ""Jim""",DEM,0.6285835964
+SD,00,0,Kristi,Noem,"Noem, Kristi",REP,0.4811850006
+TN,01,1,David Philip,Roe,"Roe, David Philip",REP,0.8083937408
+TN,02,1,"John J., Jr.",Duncan,"Duncan, John J., Jr.",REP,0.8178336602
+TN,03,0,Chuck ,Fleischmann,"Fleischmann, Chuck ",REP,0.5679024535
+TN,04,0,Scott,DesJarlais,"DesJarlais, Scott",REP,0.570659363
+TN,05 ,1,Jim,Cooper,"Cooper, Jim",DEM,0.5622639798
+TN,06,0,Diane ,Black,"Black, Diane ",REP,0.6725680852
+TN,07,1,Marsha ,Blackburn,"Blackburn, Marsha ",REP,0.7237172277
+TN,08,0,Stephen Lee,Fincher,"Fincher, Stephen Lee",REP,0.5899405633
+TN,09,1,Steve,Cohen,"Cohen, Steve",DEM,0.7399690157
+TX,01,1,Louie ,Gohmert,"Gohmert, Louie ",REP,0.8972948984
+TX,02,1,Ted,Poe,"Poe, Ted",REP,0.8861113194
+TX,03,1,Sam,Johnson,"Johnson, Sam",REP,0.6628147682
+TX,04,1,Ralph M.,Hall,"Hall, Ralph M.",REP,0.7318746444
+TX,05,1,Jeb,Hensarling,"Hensarling, Jeb",REP,0.7052705997
+TX,06,1,Joe L. ,Barton,"Barton, Joe L. ",REP,0.6590918878
+TX,07,1,John,Culberson,"Culberson, John",REP,0.8144723265
+TX,08,1,Kevin,Brady,"Brady, Kevin",REP,0.8026743047
+TX,09,1,Al,Green,"Green, Al",DEM,0.7573912468
+TX,10,1,Michael,McCaul,"McCaul, Michael",REP,0.6467384274
+TX,11,1,Mike,Conaway,"Conaway, Mike",REP,0.808426677
+TX,12,1,Kay ,Granger,"Granger, Kay ",REP,0.7185728205
+TX,13,1,Mac,Thornberry,"Thornberry, Mac",REP,0.8704889921
+TX,14,1,Ron,Paul,"Paul, Ron",REP,0.7599025149
+TX,15,1,Rubén,Hinojosa,"Hinojosa, Rubén",DEM,0.5573064113
+TX,16,1,Silvestre,Reyes,"Reyes, Silvestre",DEM,0.5807496584
+TX,17,0,Bill,Flores,"Flores, Bill",REP,0.6180187903
+TX,18,1,Sheila Jackson,Lee,"Lee, Sheila Jackson",DEM,0.7015108679
+TX,19,1,Randy,Neugebauer,"Neugebauer, Randy",REP,0.777798149
+TX,20,1,Charles A.,Gonzales,"Gonzales, Charles A.",DEM,0.6361664045
+TX,21,1,Lamar,Smith,"Smith, Lamar",REP,0.6887653512
+TX,22,1,Pete,Olson,"Olson, Pete",REP,0.6749350456
+TX,23,0,"Francisco ""Quico""",Canseco,"Canseco, Francisco ""Quico""",REP,0.4939683503
+TX,24,1,Kenny E.,Marchant,"Marchant, Kenny E.",REP,0.8157180467
+TX,25,1,Lloyd,Doggett,"Doggett, Lloyd",DEM,0.5282355863
+TX,26,1,Michael C.,Burgess,"Burgess, Michael C.",REP,0.6705277918
+TX,27,0,R. Blake,Farenthold,"Farenthold, R. Blake",REP,0.478437884
+TX,28,1,Henry,Cuellar,"Cuellar, Henry",DEM,0.5634818046
+TX,29,1,Gene,Green,"Green, Gene",DEM,0.6461283384
+TX,30,1,Eddie Bernice,Johnson,"Johnson, Eddie Bernice",DEM,0.7573566829
+TX,31,1,John R. ,Carter,"Carter, John R. ",REP,0.8253972401
+TX,32,1,Pete,Sessions,"Sessions, Pete",REP,0.6261025152
+UT,01,1,Rob,Bishop,"Bishop, Rob",REP,0.6919350053
+UT,02,1,Jim,Matheson,"Matheson, Jim",DEM,0.504873991
+UT,03,1,Jason,Chaffetz,"Chaffetz, Jason",REP,0.7232459909
+VT,00,1,Peter,Welch,"Welch, Peter",DEM,0.6456706118
+VA,01,1,"Robert J. ""Rob""",Wittman,"Wittman, Robert J. ""Rob""",REP,0.638741778
+VA,02,0,E. Scott,Rigell,"Rigell, E. Scott",REP,0.5312437984
+VA,03,1,"Robert C. ""Bobby""",Scott,"Scott, Robert C. ""Bobby""",DEM,0.7001464308
+VA,04,1,J. Randy,Forbes,"Forbes, J. Randy",REP,0.6233158088
+VA,05,0,Robert,Hurt,"Hurt, Robert",REP,0.5081194565
+VA,06,1,"Robert W. ""Bob""",Goodlatte,"Goodlatte, Robert W. ""Bob""",REP,0.7626918889
+VA,07,1,Eric I.,Cantor,"Cantor, Eric I.",REP,0.5921500244
+VA,08,1,"James P. ""Jim,"" Jr.",Moran,"Moran, James P. ""Jim,"" Jr.",DEM,0.610250173
+VA,09,0,H. Morgan,Griffith,"Griffith, H. Morgan",REP,0.5121310528
+VA,10,1,Frank R.,Wolf,"Wolf, Frank R.",REP,0.6286848616
+VA,11,1,"Gerald E. ""Gerry""",Connolly,"Connolly, Gerald E. ""Gerry""",DEM,0.4922648501
+VI,00,1,Donna M.,Christensen,"Christensen, Donna M.",DEM,0.7172702957
+WA,01,1,Jay,Inslee,"Inslee, Jay",DEM,0.5766670341
+WA,02,1,Rick,Larsen,"Larsen, Rick",DEM,0.5107233446
+WA,03,0,Jaime ,Herrera,"Herrera, Jaime ",REP,0.5297188797
+WA,04,1,Doc,Hastings,"Hastings, Doc",REP,0.676420701
+WA,05,1,Cathy McMorris,Rodgers,"Rodgers, Cathy McMorris",REP,0.6366634217
+WA,06,1,Norm,Dicks,"Dicks, Norm",DEM,0.5803923217
+WA,07,1,Jim,McDermott,"McDermott, Jim",DEM,0.8297335854
+WA,08,1,Dave,Reichert,"Reichert, Dave",REP,0.5205162048
+WA,09,1,Adam,Smith,"Smith, Adam",DEM,0.548520794
+WV,01,0,David B.,McKinley,"McKinley, David B.",REP,0.5040026684
+WV,02,1,Shelley Moore,Capito,"Capito, Shelley Moore",REP,0.684570787
+WV,03,1,"Nick Joe, II",Rahall,"Rahall, Nick Joe, II",DEM,0.5603864734
+WI,01,1,Paul,Ryan,"Ryan, Paul",REP,0.6820962951
+WI,02,1,Tammy,Baldwin,"Baldwin, Tammy",DEM,0.6177341175
+WI,03,1,Ron,Kind,"Kind, Ron",DEM,0.5028248588
+WI,04,1,Gwen,Moore,"Moore, Gwen",DEM,0.6898458936
+WI,05,1,"F. James, Jr.",Sensenbrenner,"Sensenbrenner, F. James, Jr.",REP,0.6932421255
+WI,06,1,Tom,Petri,"Petri, Tom",REP,0.7066087822
+WI,07,0,Sean,Duffy,"Duffy, Sean",REP,0.521056335
+WI,08,0,Reid J.,Ribble,"Ribble, Reid J.",REP,0.5476500164
+WY,00,1,Cynthia M.,Lummis,"Lummis, Cynthia M.",REP,0.7041862555
