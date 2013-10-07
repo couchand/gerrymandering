@@ -13,6 +13,11 @@ body {
     shape-rendering: crispEdges;
 }
 
+.distribution {
+    fill: none;
+    stroke: #000;
+}
+
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -27,8 +32,42 @@ var DELEGATES = {
     VI: 1
 };
 
+var noLabel = function() { return ''; };
+var percentage = d3.format('.0%');
+
+var width = 550,
+    height = 150,
+    margin = 10,
+    widthSvg = width + 2*margin + 5,
+    heightSvg = height + 2*margin + 10;
+
+var x = d3.scale.linear()
+    .domain([0.45, 1])
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .domain([0, 100])
+    .range([height, 0]);
+
 var percentile = d3.scale.quantile()
     .range(d3.range(0,100));
+
+var xAxis = d3.svg.axis()
+    .orient('bottom')
+    .scale(x)
+    .tickFormat(percentage)
+    .tickValues([0.5,0.75,1]);
+
+var yAxis = d3.svg.axis()
+    .orient('left')
+    .scale(y)
+    .tickFormat(noLabel)
+    .tickValues([0,25,50,75,100]);
+
+var cdfLine = d3.svg.line()
+    .x(function(d) { return x(d); })
+    .y(function(d, i) { return y(i); })
+    .interpolate('basis');
 
 function cleanRecord(d) {
     d.name = d.name.trim();
@@ -65,6 +104,26 @@ for ( var i = 2000; i <= 2012; i += 2 ) {
         cutoff.push(1);
         cutoff.splice(0, null, 0);
         years[d[0].year] = cutoff;
+
+        var g = d3.select('body').append('svg')
+            .attr('width', widthSvg)
+            .attr('height', heightSvg)
+            .append('g')
+            .attr('transform', 'translate('+margin+','+margin+')');
+
+        g.append('g')
+            .attr('class', 'x axis')
+            .attr('transform', 'translate(0,'+height+')')
+            .call(xAxis);
+        g.append('g')
+            .attr('class', 'y axis')
+            .call(yAxis);
+
+        g.append('path')
+            .attr('class', 'distribution')
+            .attr('d', cdfLine(cutoff));
+
+        d3.select('body').append('br');
     });
 }
 
