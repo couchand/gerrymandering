@@ -15,12 +15,12 @@ body {
 
 .distribution {
     fill: none;
-    stroke: #000;
 }
 
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
 <script>
 
 var DELEGATES = {
@@ -48,6 +48,10 @@ var x = d3.scale.linear()
 var y = d3.scale.linear()
     .domain([0, 100])
     .range([height, 0]);
+
+var color = d3.scale.ordinal()
+    .domain([2000, 2002, 2004, 2006, 2008, 2010, 2012])
+    .range(colorbrewer["YlGnBu"]["7"]);
 
 var percentile = d3.scale.quantile()
     .range(d3.range(0,100));
@@ -135,7 +139,28 @@ function checkComplete() {
         .data(years)
         .enter().append('path')
         .attr('class', 'distribution')
+        .attr('stroke', function(d){ return color(d.year); })
         .attr('d', function(d){ return cdfLine(d.cutoffs); });
+
+    var legend = g.append('g')
+        .attr('class', 'legend')
+        .attr('transform', 'translate('+(width*0.7)+','+(height*0.4)+')');
+
+    var year = legend.selectAll('.year')
+        .data(years)
+        .enter().append('g')
+        .attr('class', 'year')
+        .attr('transform', function(d, i) { return 'translate(0,'+(i*12)+')'; });
+
+    year.append('rect')
+        .attr('width', 25)
+        .attr('height', 10)
+        .attr('fill', function(d){ return color(d.year); });
+
+    year.append('text')
+        .attr('dx', 30)
+        .attr('dy', 10)
+        .text(function(d) { return d.year; });
 }
 
 </script>
