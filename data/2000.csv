@@ -77,7 +77,7 @@ CO,4,1,"Schaffer, Bob",R,0.795
 CO,5,1,"Hefley, Joel",R,0.827
 CO,6,1,"Tancredo, Tom",R,0.5388
 CT,1,1,"Larson, John B.",D,0.7192
-CT,2,0,"Simmons, Rob",Combined,0.5063
+CT,2,0,"Simmons, Rob",R,0.5063
 CT,3,1,"DeLauro, Rosa L.",D,0.7191
 CT,4,1,"Shays, Christopher",R,0.5763
 CT,5,1,"Maloney, Jim",D,0.5362
@@ -257,37 +257,37 @@ NJ,13,1,"Menendez, Robert",D,0.7869
 NM,1,1,"Wilson, Heather A.",R,0.5034
 NM,2,1,"Skeen, Joe",R,0.5811
 NM,3,1,"Udall, Tom",D,0.6718
-NY,1,0,"Grucci, Felix J. Jr.",Combined,0.5552
+NY,1,0,"Grucci, Felix J. Jr.",R,0.5552
 NY,2,0,"Isreal, Steve J.",D,0.4794
-NY,3,1,"King, Peter T.",Combined,0.5953
-NY,4,1,"McCarthy, Carolyn",Combined,0.6055
-NY,5,1,"Ackerman, Gary L.",Combined,0.6795
-NY,6,1,"Meeks, Gregory W.",Combined,1
+NY,3,1,"King, Peter T.",R,0.5953
+NY,4,1,"McCarthy, Carolyn",D,0.6055
+NY,5,1,"Ackerman, Gary L.",D,0.6795
+NY,6,1,"Meeks, Gregory W.",D,1
 NY,7,1,"Crowley, Joseph",D,0.7168
-NY,8,1,"Nadler, Jerrold L.",Combined,0.8124
-NY,9,1,"Weiner, Anthony D.",Combined,0.6844
-NY,10,1,"Towns, Edolphus",Combined,0.9015
-NY,11,1,"Owens, Major R.",Combined,0.8701
-NY,12,1,"Velazquez, Nydia M.",Combined,0.8709
-NY,13,1,"Fossella, Vito J.",Combined,0.6457
-NY,14,1,"Maloney, Carolyn B.",Combined,0.7391
-NY,15,1,"Rangel, Charles B.",Combined,0.9188
-NY,16,1,"Serrano, Jose E.",Combined,0.9581
-NY,17,1,"Engel, Eliot L.",Combined,0.8971
+NY,8,1,"Nadler, Jerrold L.",D,0.8124
+NY,9,1,"Weiner, Anthony D.",D,0.6844
+NY,10,1,"Towns, Edolphus",D,0.9015
+NY,11,1,"Owens, Major R.",D,0.8701
+NY,12,1,"Velazquez, Nydia M.",D,0.8709
+NY,13,1,"Fossella, Vito J.",R,0.6457
+NY,14,1,"Maloney, Carolyn B.",D,0.7391
+NY,15,1,"Rangel, Charles B.",D,0.9188
+NY,16,1,"Serrano, Jose E.",D,0.9581
+NY,17,1,"Engel, Eliot L.",D,0.8971
 NY,18,1,"Lowey, Nita M.",D,0.6726
-NY,19,1,"Kelly, Sue W.",Combined,0.6085
+NY,19,1,"Kelly, Sue W.",R,0.6085
 NY,20,1,"Gilman, Benjamin A.",R,0.5762
-NY,21,1,"McNulty, Michael R.",Combined,0.744
-NY,22,1,"Sweeney, John E.",Combined,0.679
-NY,23,1,"Boehlert, Sherwood L.",Combined,0.6054
-NY,24,1,"McHugh, John M.",Combined,0.7429
-NY,25,1,"Walsh, James T.",Combined,0.6896
-NY,26,1,"Hinchey, Maurice D.",Combined,0.6196
-NY,27,1,"Reynolds, Thomas M.",Combined,0.693
+NY,21,1,"McNulty, Michael R.",D,0.744
+NY,22,1,"Sweeney, John E.",R,0.679
+NY,23,1,"Boehlert, Sherwood L.",R,0.6054
+NY,24,1,"McHugh, John M.",R,0.7429
+NY,25,1,"Walsh, James T.",R,0.6896
+NY,26,1,"Hinchey, Maurice D.",D,0.6196
+NY,27,1,"Reynolds, Thomas M.",R,0.693
 NY,28,1,"Slaughter, Louise M.",D,0.6571
-NY,29,1,"LaFalce, John J.",Combined,0.6126
-NY,30,1,"Quinn, Jack",Combined,0.6712
-NY,31,1,"Houghton, Amo",Combined,0.7734
+NY,29,1,"LaFalce, John J.",D,0.6126
+NY,30,1,"Quinn, Jack",R,0.6712
+NY,31,1,"Houghton, Amo",R,0.7734
 NC,1,1,"Clayton, Eva M.",D,0.6564
 NC,2,1,"Etheridge, Bob",D,0.5826
 NC,3,1,"Jones, Walter B.",R,0.6144
