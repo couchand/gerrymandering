@@ -95,36 +95,47 @@ function loadYear(year, cb) {
     });
 }
 
-years = {};
+var years = [];
+var remainingYears = [];
 
 for ( var i = 2000; i <= 2012; i += 2 ) {
+    remainingYears.push(i);
     loadYear(i, function(d) {
         percentile.domain(d.map(function(r) { return r.result; } ));
         var cutoff = percentile.quantiles();
         cutoff.push(1);
         cutoff.splice(0, null, 0);
-        years[d[0].year] = cutoff;
-
-        var g = d3.select('body').append('svg')
-            .attr('width', widthSvg)
-            .attr('height', heightSvg)
-            .append('g')
-            .attr('transform', 'translate('+margin+','+margin+')');
-
-        g.append('g')
-            .attr('class', 'x axis')
-            .attr('transform', 'translate(0,'+height+')')
-            .call(xAxis);
-        g.append('g')
-            .attr('class', 'y axis')
-            .call(yAxis);
-
-        g.append('path')
-            .attr('class', 'distribution')
-            .attr('d', cdfLine(cutoff));
-
-        d3.select('body').append('br');
+        years.push({
+            year: d[0].year,
+            cutoffs: cutoff
+        });
+        remainingYears.pop();
+        checkComplete();
     });
+}
+
+function checkComplete() {
+    if ( remainingYears.length ) return;
+
+    var g = d3.select('body').append('svg')
+        .attr('width', widthSvg)
+        .attr('height', heightSvg)
+        .append('g')
+        .attr('transform', 'translate('+margin+','+margin+')');
+
+    g.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,'+height+')')
+        .call(xAxis);
+    g.append('g')
+        .attr('class', 'y axis')
+        .call(yAxis);
+
+    g.selectAll('.distribution')
+        .data(years)
+        .enter().append('path')
+        .attr('class', 'distribution')
+        .attr('d', function(d){ return cdfLine(d.cutoffs); });
 }
 
 </script>
