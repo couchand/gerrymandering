@@ -41,8 +41,8 @@ var DELEGATES = {
     VI: 1
 };
 
-var width = 600,
-    height = 400,
+var width = 960,
+    height = 500,
     margin = 30,
     widthSvg = width + margin*2,
     heightSvg = height + margin*2;
@@ -219,6 +219,11 @@ function checkComplete() {
         .enter().append("g")
             .attr("class", "node")
             .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+            .call(d3.behavior.drag()
+                .origin(function(d) { return d; })
+                .on("dragstart", function() { this.parentNode.appendChild(this); })
+                .on("drag", dragmove)
+            );
 
     node.append("rect")
             .attr("height", function(d) { return d.dy; })
@@ -239,7 +244,11 @@ function checkComplete() {
             .attr("x", 6 + sankey.nodeWidth())
             .attr("text-anchor", "start");
 
-
+    function dragmove(d) {
+        d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
+        sankey.relayout();
+        link.attr("d", path);
+    }
 }
 
 </script>
