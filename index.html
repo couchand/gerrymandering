@@ -84,7 +84,7 @@ var cdfLine = d3.svg.line()
 function cleanRecord(d) {
     d.name = d.name.trim();
     d.state = d.state.trim();
-    d.district = d.state + '-' + d.district.trim();
+    d.district = d.state + '-' + ('00' + d.district.trim()).slice(-2);
     d.incumbent = d.incumbent == 1;
     d.result = +d.result;
 }
