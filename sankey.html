@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<script src="http://bost.ocks.org/mike/sankey/sankey.js"></script>
+<script>
+
+var yearsToShow = [2000, 2002, 2004, 2006, 2008, 2010, 2012];
+
+var DELEGATES = {
+    AS: 1,
+    DC: 1,
+    GU: 1,
+    MP: 1,
+    PR: 1,
+    VI: 1
+};
+
+var width = 600,
+    height = 400,
+    margin = 30,
+    widthSvg = width + margin*2,
+    heightSvg = height + margin*2;
+
+var sankey = d3.sankey()
+    .nodeWidth(15)
+    .nodePadding(10)
+    .size([width, height]);
+
+var path = sankey.link();
+
+function getCertainty(d) { return d.result > 0.67 ? 'Safe' : d.result > 0.54 ? 'Likely' : 'Close'; }
+function getParty(d) { return d.party[0] == 'D' ? 'D' : d.party[0] == 'R' ? 'R' : 'I'; }
+
+var byDistrict = d3.nest()
+    .key(function(d) { return d.district; });
+var byYear = d3.nest()
+    .key(function(d) { return d.year; });
+
+var color = {
+    "D": {
+        "Safe": "#2171B5",
+        "Likely": "#6BAED6",
+        "Close": "#C6DBEF",
+    },
+    "R": {
+        "Safe": "#CB181D",
+        "Likely": "#FB6A4A",
+        "Close": "#FCBBA1"
+    }
+};
+
+function cleanRecord(d) {
+    d.name = d.name.trim();
+    d.state = d.state.trim();
+    d.district = d.state + '-' + ('00' + d.district.trim()).slice(-2);
+    d.incumbent = d.incumbent == 1;
+    d.result = +d.result;
+}
+
+function setYear(year) {
+    return function(d) {
+        d.year = year;
+    }
+}
+
+function isRepresentative(d) {
+    return !(d.state in DELEGATES);
+}
+
+function loadYear(year, cb) {
+    d3.csv('data/'+year+'.csv', function(error, districts) {
+        districts.forEach(cleanRecord);
+        districts.forEach(setYear(year));
+        cb( districts.filter(isRepresentative) );
+    });
+}
+
+var results = [];
+var remainingYears = [];
+
+yearsToShow.forEach(function(i) {
+    remainingYears.push(i);
+    loadYear(i, function(d) {
+        d.forEach(function(r) {
+            results.push(r);
+        });
+        remainingYears.pop();
+        checkComplete();
+    });
+});
+
+function checkComplete() {
+    if ( remainingYears.length ) return;
+
+    results.forEach(function(d) {
+        d.party = getParty(d);
+    });
+
+    var nodes = [], links = [], nodesByYearThenParty = {}, groupedLinks = [];
+
+    yearsToShow.forEach(function(year) {
+        var nodesByParty = nodesByYearThenParty[year] = {};
+
+        ['D', 'R', 'I', 'Redistricting'].forEach(function(party) {
+            var node = {
+                year: year,
+                party: party
+            };
+
+            nodesByParty[party] = node;
+            nodes.push(node);
+        });
+    });
+
+    byDistrict.entries(results).forEach(function(d) {
+        var years = byYear.map(d.values);
+
+        yearsToShow.forEach(function(year) {
+            if ( year == yearsToShow[0] ) return;
+
+            var lastYear = year-2,
+                prev = years[lastYear],
+                next = years[year];
+
+            if ( !!prev ) {
+                prev = prev[0].party;
+            }
+            else {
+                prev = 'Redistricting';
+            }
+            if ( !!next ) {
+                next = next[0].party;
+            }
+            else {
+                next = 'Redistricting';
+            }
+
+            if ( prev == 'Redistricting' && next == 'Redistricting' ) return;
+
+            links.push({
+                district: d.key,
+                election: year,
+                source: nodesByYearThenParty[lastYear][prev],
+                target: nodesByYearThenParty[year][next]
+            });
+        });
+    });
+
+    d3.nest()
+        .key(function(d) { return '' + d.source.year + d.source.party + d.target.year + d.target.party; })
+        .entries(links)
+        .forEach(function(d) {
+            groupedLinks.push({
+                source: d.values[0].source,
+                target: d.values[0].target,
+                value: d.values.length
+            });
+        });
+
+    sankey
+        .nodes(nodes)
+        .links(groupedLinks)
+        .layout(32);
+
+    var svg = d3.select('body')
+        .append('svg')
+        .attr('width', widthSvg)
+        .attr('height', heightSvg)
+        .append('g')
+        .attr('transform', 'translate('+margin+','+margin+')');
+
+    var link = svg.append("g").selectAll(".link")
+            .data(groupedLinks)
+        .enter().append("path")
+            .attr("class", "link")
+            .attr("d", path)
+            .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+            .sort(function(a, b) { return b.dy - a.dy; });
+
+    link.append("title")
+        .text(function(d) { return d.source.party + " → " + d.target.party + "\n" + d.value; });
+
+    var node = svg.append("g").selectAll(".node")
+            .data(nodes)
+        .enter().append("g")
+            .attr("class", "node")
+            .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+
+    node.append("rect")
+            .attr("height", function(d) { return d.dy; })
+            .attr("width", sankey.nodeWidth())
+            .style("fill", function(d) { return d.color = color[d.party] && color[d.party].Likely; })
+            .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
+        .append("title")
+            .text(function(d) { return d.name + "\n" + format(d.value); });
+
+    node.append("text")
+            .attr("x", -6)
+            .attr("y", function(d) { return d.dy / 2; })
+            .attr("dy", ".35em")
+            .attr("text-anchor", "end")
+            .attr("transform", null)
+            .text(function(d) { return d.name; })
+        .filter(function(d) { return d.x < width / 2; })
+            .attr("x", 6 + sankey.nodeWidth())
+            .attr("text-anchor", "start");
+
+
+}
+
+</script>
