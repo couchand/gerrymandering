@@ -181,6 +181,13 @@ yearsToShow.forEach(function(i) {
 function checkComplete() {
     if ( remainingYears.length ) return;
 
+    drawGraph( results );
+    drawGraph( results.filter(function(d) { return d.incumbent; }) );
+    drawGraph( results.filter(function(d) { return !d.incumbent; }) );
+}
+
+
+function drawGraph(results) {
     var svg = d3.select('body')
         .append('svg')
         .attr('width', widthSvg)
