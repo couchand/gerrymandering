@@ -226,7 +226,7 @@ function checkComplete() {
             .style("fill", function(d) { return d.color = color[d.party] && color[d.party].Likely; })
             .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
         .append("title")
-            .text(function(d) { return d.name + "\n" + format(d.value); });
+            .text(function(d) { return d.party + "\n" + d.value; });
 
     node.append("text")
             .attr("x", -6)
