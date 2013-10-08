@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.parsets.tooltip {
+    display: none;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<script src="http://www.jasondavies.com/parallel-sets/d3.parsets.js"></script>
+<link rel="stylesheet" href="http://www.jasondavies.com/parallel-sets/d3.parsets.css" />
+<script>
+
+var yearsToShow = [2000, 2002, 2004, 2006, 2008, 2010, 2012];
+
+var DELEGATES = {
+    AS: 1,
+    DC: 1,
+    GU: 1,
+    MP: 1,
+    PR: 1,
+    VI: 1
+};
+
+var byDistrict = d3.nest()
+    .key(function(d) { return d.district; });
+var byYear = d3.nest()
+    .key(function(d) { return d.year; });
+
+function cleanRecord(d) {
+    d.name = d.name.trim();
+    d.state = d.state.trim();
+    d.district = d.state + '-' + ('00' + d.district.trim()).slice(-2);
+    d.incumbent = d.incumbent == 1;
+    d.result = +d.result;
+}
+
+function setYear(year) {
+    return function(d) {
+        d.year = year;
+    }
+}
+
+function isRepresentative(d) {
+    return !(d.state in DELEGATES);
+}
+
+function loadYear(year, cb) {
+    d3.csv('data/'+year+'.csv', function(error, districts) {
+        districts.forEach(cleanRecord);
+        districts.forEach(setYear(year));
+        cb( districts.filter(isRepresentative) );
+    });
+}
+
+var results = [];
+var remainingYears = [];
+
+yearsToShow.forEach(function(i) {
+    remainingYears.push(i);
+    loadYear(i, function(d) {
+        d.forEach(function(r) {
+            results.push(r);
+        });
+        remainingYears.pop();
+        checkComplete();
+    });
+});
+
+function checkComplete() {
+    if ( remainingYears.length ) return;
+
+    results.forEach(function(d) {
+        d.party = getParty(d);
+    });
+
+    var districts = [];
+    byDistrict.entries(results).forEach(function(d) {
+        var district = { district: d.key };
+
+        byYear.entries(d.values).forEach(function(y) {
+            if ( y.values.length )
+                district[''+y.key] = y.values[0].party;
+        });
+
+        if ( !district[2000] && !!district[2002] ) {
+            district[2000] = 'new';
+        }
+        if ( !!district[2000] && !district[2002] ) {
+            district[2002] = district[2004] = district[2006] = district[2008] = district[2010] = district[2012] = 'old';
+        }
+        if ( !district[2010] && !!district[2012] ) {
+            district[2000] = district[2002] = district[2004] = district[2006] = district[2008] = district[2010] = 'new';
+        }
+        if ( !!district[2010] && !district[2012] ) {
+            district[2012] = 'old';
+        }
+
+        if ( d.values.length < 7 ) console.log(district, d);
+
+        districts.push( district );
+    });
+
+    var chart = d3.parsets()
+        .dimensions(yearsToShow)
+        .tension(0.6);
+
+    var vis = d3.select("body").append("svg")
+        .attr("width", chart.width())
+        .attr("height", chart.height());
+
+    vis.datum(districts).call(chart);
+}
+
+</script>
