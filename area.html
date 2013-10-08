@@ -243,6 +243,14 @@ function checkComplete() {
         .attr('transform', 'translate(0,'+height+')')
         .call(xAxisB);
 
+    svg.append('line')
+        .attr('x1', 0)
+        .attr('y1', y(217.5))
+        .attr('x2', width)
+        .attr('y2', y(217.5))
+        .attr('stroke', 'black')
+        .style('shape-rendering', 'crispEdges');
+
 }
 
 </script>
