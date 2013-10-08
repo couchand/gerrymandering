@@ -41,11 +41,20 @@ var percentage = d3.format('.0%');
 function getCertainty(d) { return d.result > 0.67 ? 'Safe' : d.result > 0.54 ? 'Likely' : 'Close'; }
 function getParty(d) { return d.party[0] == 'D' ? 'D' : d.party[0] == 'R' ? 'R' : 'I'; }
 
-var byCertaintyAndParty = d3.nest()
-    .key(function(d) { return getParty(d) + ' - ' + getCertainty(d); })
+var byPartyThenCertainty = d3.nest()
+    .key(getParty)
+    .sortKeys(d3.ascending)
+    .key(getCertainty)
     .sortKeys(d3.ascending)
     .key(function(d) { return d.year; })
-    .rollup(function(v) { return v.length; });
+    .rollup(function(v) {
+        return {
+            year: v[0].year,
+            party: getParty(v[0]),
+            certainty: getCertainty(v[0]),
+            y: v.length
+        };
+    });
 
 var y = d3.scale.linear()
     .domain([0, 435])
@@ -56,22 +65,31 @@ var x = d3.scale.linear()
     .range([0, width]);
 
 var stack = d3.layout.stack()
-    .x(function(d) { return +d.key; })
-    .y(function(d) { return d.values; })
+    .x(function(d) { return d.year; })
+    .order('reverse')
     .values(function(d) { return d.values; });
 
-var area = d3.svg.area()
-    .x(function(d) { return x(+d.key); })
+var areaD = d3.svg.area()
+    .x(function(d) { return x(d.year); })
     .y0(function(d) { return y(d.y0); })
     .y1(function(d) { return y(d.y0 + d.y); });
 
+var areaR = d3.svg.area()
+    .x(function(d) { return x(d.year); })
+    .y0(function(d) { return height - y(d.y0); })
+    .y1(function(d) { return height - y(d.y0 + d.y); });
+
 var color = {
-    "D - Safe": "#2171B5",
-    "D - Likely": "#6BAED6",
-    "D - Close": "#C6DBEF",
-    "R - Safe": "#CB181D",
-    "R - Likely": "#FB6A4A",
-    "R - Close": "#FCBBA1"
+    "D": {
+        "Safe": "#2171B5",
+        "Likely": "#6BAED6",
+        "Close": "#C6DBEF",
+    },
+    "R": {
+        "Safe": "#CB181D",
+        "Likely": "#FB6A4A",
+        "Close": "#FCBBA1"
+    }
 };
 
 function cleanRecord(d) {
@@ -124,30 +142,32 @@ function checkComplete() {
         .append('g')
         .attr('transform', 'translate('+margin+','+margin+')');
 
-    var nested = byCertaintyAndParty.entries(results)
-        .filter(function(d) { return d.key[0] != 'I'; });
+    var parties = byPartyThenCertainty.entries(results)
+        .filter(function(d) { return d.key != 'I'; });
 
-    nested.forEach(function(d) {
-        var years = {};
-        d.values.forEach(function(year) {
-            years[year.key] = 1;
-        });
-        yearsToShow.forEach(function(year) {
-            if ( !(year in years) ) {
-                d.values.push({
-                    year: year,
-                    values: 0
-                });
-            }
+    parties.forEach(function(party) {
+        party.values.forEach(function(certainty) {
+            certainty.values = certainty.values.map(function(year) {
+                return year.values;
+            });
+            certainty.party = party.key;
+            certainty.certainty = certainty.key;
         });
     });
 
-    svg.selectAll('.area')
-        .data(stack(nested))
+    svg.selectAll('.d.area')
+        .data(stack(parties[0].values))
         .enter().append('path')
         .attr('class', 'area')
-        .attr('d', function(d) { return area(d.values); })
-        .attr('fill', function(d) { return color[d.key]; });
+        .attr('d', function(d) { return areaD(d.values); })
+        .attr('fill', function(d) { return color[d.party][d.certainty]; });
+
+    svg.selectAll('.r.area')
+        .data(stack(parties[1].values))
+        .enter().append('path')
+        .attr('class', 'area')
+        .attr('d', function(d) { return areaR(d.values); })
+        .attr('fill', function(d) { return color[d.party][d.certainty]; });
 
 }
 
