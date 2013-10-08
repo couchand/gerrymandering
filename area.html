@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<script>
+
+var yearsToShow = [2000, 2002, 2004, 2006, 2008, 2010, 2012];
+
+var DELEGATES = {
+    AS: 1,
+    DC: 1,
+    GU: 1,
+    MP: 1,
+    PR: 1,
+    VI: 1
+};
+
+var width = 500,
+    height = 300,
+    margin = 20,
+    widthSvg = width + margin*2,
+    heightSvg = height + margin*2;
+
+var percentage = d3.format('.0%');
+
+function getCertainty(d) { return d.result > 0.67 ? 'Safe' : d.result > 0.54 ? 'Likely' : 'Close'; }
+function getParty(d) { return d.party[0] == 'D' ? 'D' : d.party[0] == 'R' ? 'R' : 'I'; }
+
+var byCertaintyAndParty = d3.nest()
+    .key(function(d) { return getParty(d) + ' - ' + getCertainty(d); })
+    .sortKeys(d3.ascending)
+    .key(function(d) { return d.year; })
+    .rollup(function(v) { return v.length; });
+
+var y = d3.scale.linear()
+    .domain([0, 435])
+    .range([height, 0]);
+
+var x = d3.scale.linear()
+    .domain(d3.extent(yearsToShow))
+    .range([0, width]);
+
+var stack = d3.layout.stack()
+    .x(function(d) { return +d.key; })
+    .y(function(d) { return d.values; })
+    .values(function(d) { return d.values; });
+
+var area = d3.svg.area()
+    .x(function(d) { return x(+d.key); })
+    .y0(function(d) { return y(d.y0); })
+    .y1(function(d) { return y(d.y0 + d.y); });
+
+var color = {
+    "D - Safe": "#2171B5",
+    "D - Likely": "#6BAED6",
+    "D - Close": "#C6DBEF",
+    "R - Safe": "#CB181D",
+    "R - Likely": "#FB6A4A",
+    "R - Close": "#FCBBA1"
+};
+
+function cleanRecord(d) {
+    d.name = d.name.trim();
+    d.state = d.state.trim();
+    d.district = d.state + '-' + ('00' + d.district.trim()).slice(-2);
+    d.incumbent = d.incumbent == 1;
+    d.result = +d.result;
+}
+
+function setYear(year) {
+    return function(d) {
+        d.year = year;
+    }
+}
+
+function isRepresentative(d) {
+    return !(d.state in DELEGATES);
+}
+
+function loadYear(year, cb) {
+    d3.csv('data/'+year+'.csv', function(error, districts) {
+        districts.forEach(cleanRecord);
+        districts.forEach(setYear(year));
+        cb( districts.filter(isRepresentative) );
+    });
+}
+
+var results = [];
+var remainingYears = [];
+
+yearsToShow.forEach(function(i) {
+    remainingYears.push(i);
+    loadYear(i, function(d) {
+        d.forEach(function(r) {
+            results.push(r);
+        });
+        remainingYears.pop();
+        checkComplete();
+    });
+});
+
+function checkComplete() {
+    if ( remainingYears.length ) return;
+
+    var svg = d3.select('body')
+        .append('svg')
+        .attr('width', widthSvg)
+        .attr('height', heightSvg)
+        .append('g')
+        .attr('transform', 'translate('+margin+','+margin+')');
+
+    var nested = byCertaintyAndParty.entries(results)
+        .filter(function(d) { return d.key[0] != 'I'; });
+
+    nested.forEach(function(d) {
+        var years = {};
+        d.values.forEach(function(year) {
+            years[year.key] = 1;
+        });
+        yearsToShow.forEach(function(year) {
+            if ( !(year in years) ) {
+                d.values.push({
+                    year: year,
+                    values: 0
+                });
+            }
+        });
+    });
+
+    svg.selectAll('.area')
+        .data(stack(nested))
+        .enter().append('path')
+        .attr('class', 'area')
+        .attr('d', function(d) { return area(d.values); })
+        .attr('fill', function(d) { return color[d.key]; });
+
+}
+
+</script>
