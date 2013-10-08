@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<script>
+
+var yearsToShow = [2000, 2002, 2010, 2012];
+
+var DELEGATES = {
+    AS: 1,
+    DC: 1,
+    GU: 1,
+    MP: 1,
+    PR: 1,
+    VI: 1
+};
+
+var width = 500,
+    height = 300,
+    margin = 20,
+    widthSvg = width + margin*2,
+    heightSvg = height + margin*2;
+
+var percentage = d3.format('.0%');
+
+function getDecade(d) { return d.year > 2005 ? '2010' : '2000'; }
+function getCertainty(d) { return d.result > 0.67 ? 'Safe' : d.result > 0.54 ? 'Likely' : 'Close'; }
+
+var byDecade = d3.nest()
+    .key(getDecade);
+var byCertainty = d3.nest()
+    .key(getCertainty);
+var byPartyThenYear = d3.nest()
+    .key(function(d) { return d.party[0] == 'D' ? 'D' : d.party[0] == 'R' ? 'R' : 'I'; })
+    .key(function(d) { return d.year; });
+
+var y = d3.scale.linear()
+    .domain([0, 140])
+    .range([height, 0]);
+
+var decadeScale = d3.scale.ordinal()
+    .domain([2000, 2010])
+    .rangeRoundBands([0, width]);
+
+var certaintyScale = d3.scale.ordinal()
+    .domain(['Safe', 'Likely', 'Close'])
+    .rangeRoundBands([0, decadeScale.rangeBand()], 0.3);
+
+var yearScale = d3.scale.ordinal()
+    .domain([0, 2])
+    .rangePoints([0, certaintyScale.rangeBand()]);
+
+var color = {
+    "D": {
+        "Safe": "#2171B5",
+        "Likely": "#6BAED6",
+        "Close": "#C6DBEF"
+    },
+    "R": {
+        "Safe": "#CB181D",
+        "Likely": "#FB6A4A",
+        "Close": "#FCBBA1"
+    }
+};
+
+function cleanRecord(d) {
+    d.name = d.name.trim();
+    d.state = d.state.trim();
+    d.district = d.state + '-' + ('00' + d.district.trim()).slice(-2);
+    d.incumbent = d.incumbent == 1;
+    d.result = +d.result;
+}
+
+function setYear(year) {
+    return function(d) {
+        d.year = year;
+    }
+}
+
+function isRepresentative(d) {
+    return !(d.state in DELEGATES);
+}
+
+function loadYear(year, cb) {
+    d3.csv('data/'+year+'.csv', function(error, districts) {
+        districts.forEach(cleanRecord);
+        districts.forEach(setYear(year));
+        cb( districts.filter(isRepresentative) );
+    });
+}
+
+var results = [];
+var remainingYears = [];
+
+yearsToShow.forEach(function(i) {
+    remainingYears.push(i);
+    loadYear(i, function(d) {
+        d.forEach(function(r) {
+            results.push(r);
+        });
+        remainingYears.pop();
+        checkComplete();
+    });
+});
+
+function checkComplete() {
+    if ( remainingYears.length ) return;
+
+    var svg = d3.select('body')
+        .append('svg')
+        .attr('width', widthSvg)
+        .attr('height', heightSvg)
+        .append('g')
+        .attr('transform', 'translate('+margin+','+margin+')');
+
+    var decades = svg.selectAll('.decade')
+        .data( byDecade.entries(results) )
+        .enter().append('g')
+        .attr('class', 'decade')
+        .attr('transform', function(d) { return 'translate('+decadeScale(d.key)+',0)'; });
+
+    var certainties = decades.selectAll('.certainty')
+        .data(function(d) { return byCertainty.entries(d.values); })
+        .enter().append('g')
+        .attr('class', 'certainty')
+        .attr('transform', function(d) { return 'translate('+certaintyScale(d.key)+',0)'; });
+
+    var parties = certainties.selectAll('.party')
+        .data(function(d) { return byPartyThenYear.entries(d.values).filter(function(p){ return p.key != 'I'; }); })
+        .enter().append('line')
+        .attr('class', 'party')
+        .attr('stroke', function(d) { return color[d.key][getCertainty(d.values[0].values[0])]; })
+        .attr('stroke-width', 1.5)
+        .attr('x1', function(d) { return yearScale(0); })
+        .attr('y1', function(d) { return y(d.values[0].values.length); })
+        .attr('x2', function(d) { return yearScale(2); })
+        .attr('y2', function(d) { return y(d.values[1].values.length); })
+
+}
+
+</script>
