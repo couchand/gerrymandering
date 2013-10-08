@@ -32,7 +32,7 @@ var DELEGATES = {
 
 var width = 500,
     height = 300,
-    margin = 20,
+    margin = 30,
     widthSvg = width + margin*2,
     heightSvg = height + margin*2;
 
@@ -49,7 +49,7 @@ var byPartyThenCertainty = d3.nest()
     .key(function(d) { return d.year; })
     .rollup(function(v) {
         return {
-            year: v[0].year,
+            year: new Date(v[0].year, 0, 1),
             party: getParty(v[0]),
             certainty: getCertainty(v[0]),
             y: v.length
@@ -60,9 +60,55 @@ var y = d3.scale.linear()
     .domain([0, 435])
     .range([height, 0]);
 
-var x = d3.scale.linear()
-    .domain(d3.extent(yearsToShow))
+var x = d3.time.scale()
+    .domain([new Date(yearsToShow[0], 0, 1), new Date(yearsToShow[yearsToShow.length-1], 0, 1)])
     .range([0, width]);
+
+var xAxisB = d3.svg.axis()
+    .orient('bottom')
+    .scale(x)
+    .tickValues(yearsToShow.map(function(y) { return new Date(y, 0, 1); }));
+
+var xAxisT = d3.svg.axis()
+    .orient('top')
+    .scale(x)
+    .tickValues(yearsToShow.map(function(y) { return new Date(y, 0, 1); }));
+
+var yAxisDL = d3.svg.axis()
+    .orient('left')
+    .scale(
+        d3.scale.linear()
+            .domain([0,200])
+            .range([height, height*(235/435)])
+    )
+    .ticks(5);
+
+var yAxisDR = d3.svg.axis()
+    .orient('right')
+    .scale(
+        d3.scale.linear()
+            .domain([0,200])
+            .range([height, height*(235/435)])
+    )
+    .ticks(5);
+
+var yAxisRL = d3.svg.axis()
+    .orient('left')
+    .scale(
+        d3.scale.linear()
+            .domain([0,200])
+            .range([0, height*(200/435)])
+    )
+    .ticks(5);
+
+var yAxisRR = d3.svg.axis()
+    .orient('right')
+    .scale(
+        d3.scale.linear()
+            .domain([0,200])
+            .range([0, height*(200/435)])
+    )
+    .ticks(5);
 
 var stack = d3.layout.stack()
     .x(function(d) { return d.year; })
@@ -168,6 +214,29 @@ function checkComplete() {
         .attr('class', 'area')
         .attr('d', function(d) { return areaR(d.values); })
         .attr('fill', function(d) { return color[d.party][d.certainty]; });
+
+    svg.append('g')
+        .attr('class', 'y axis')
+        .call(yAxisDL);
+    svg.append('g')
+        .attr('class', 'y axis')
+        .call(yAxisRL);
+    svg.append('g')
+        .attr('class', 'y axis')
+        .attr('transform', 'translate('+width+',0)')
+        .call(yAxisDR);
+    svg.append('g')
+        .attr('class', 'y axis')
+        .attr('transform', 'translate('+width+',0)')
+        .call(yAxisRR);
+
+    svg.append('g')
+        .attr('class', 'x axis')
+        .call(xAxisT);
+    svg.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,'+height+')')
+        .call(xAxisB);
 
 }
 
