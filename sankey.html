@@ -212,7 +212,11 @@ function checkComplete() {
             .sort(function(a, b) { return b.dy - a.dy; });
 
     link.append("title")
-        .text(function(d) { return d.source.party + " → " + d.target.party + "\n" + d.value; });
+        .text(function(d) {
+            var from = d.source.party + (!!d.source.year ? '' : ' '+(d.target.year-2)),
+                to = d.target.party + (!!d.target.year ? '' : ' '+d.source.year);
+            return from + " → " + to + "\n" + d.value + ' seats';
+        });
 
     var node = svg.append("g").selectAll(".node")
             .data(nodes)
@@ -231,7 +235,7 @@ function checkComplete() {
             .style("fill", function(d) { return d.color = color[d.party] && color[d.party].Likely; })
             .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
         .append("title")
-            .text(function(d) { return d.party + "\n" + d.value; });
+            .text(function(d) { return d.party + (d.year ? ' ('+d.year+')' : '') + "\n" + d.value + ' seats'; });
 
     node.append("text")
             .attr("x", -6)
