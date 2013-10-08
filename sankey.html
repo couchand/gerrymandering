@@ -124,10 +124,15 @@ function checkComplete() {
 
     var nodes = [], links = [], nodesByYearThenParty = {}, groupedLinks = [];
 
+    var districtsCreated = { party: 'Districts Created' },
+        districtsRemoved = { party: 'Districts Removed' };
+
+    nodes.push( districtsCreated, districtsRemoved );
+
     yearsToShow.forEach(function(year) {
         var nodesByParty = nodesByYearThenParty[year] = {};
 
-        ['D', 'R', 'I', 'Redistricting'].forEach(function(party) {
+        ['D', 'R', 'I'].forEach(function(party) {
             var node = {
                 year: year,
                 party: party
@@ -163,11 +168,14 @@ function checkComplete() {
 
             if ( prev == 'Redistricting' && next == 'Redistricting' ) return;
 
+            var source = prev == 'Redistricting' ? districtsCreated : nodesByYearThenParty[lastYear][prev],
+                target = next == 'Redistricting' ? districtsRemoved : nodesByYearThenParty[year][next];
+
             links.push({
                 district: d.key,
                 election: year,
-                source: nodesByYearThenParty[lastYear][prev],
-                target: nodesByYearThenParty[year][next]
+                source: source,
+                target: target
             });
         });
     });
