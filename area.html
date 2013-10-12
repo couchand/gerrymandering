@@ -33,8 +33,9 @@ var DELEGATES = {
 var width = 400,
     height = 200,
     margin = 30,
-    widthSvg = width + margin*2,
-    heightSvg = height + margin*2;
+    labelSpace = 20,
+    widthSvg = width + margin*2 + labelSpace,
+    heightSvg = height + margin*2 + labelSpace;
 
 var percentage = d3.format('.0%');
 
@@ -181,12 +182,23 @@ yearsToShow.forEach(function(i) {
 function checkComplete() {
     if ( remainingYears.length ) return;
 
-    var svg = d3.select('body')
+    var viz = d3.select('body')
         .append('svg')
         .attr('width', widthSvg)
-        .attr('height', heightSvg)
-        .append('g')
-        .attr('transform', 'translate('+margin+','+margin+')');
+        .attr('height', heightSvg);
+
+    var svg = viz.append('g')
+        .attr('transform', 'translate('+(margin+labelSpace)+','+(margin+labelSpace)+')');
+
+    viz.append('text')
+        .attr('font-size', 14)
+        .attr('transform', 'translate(10,20)')
+        .text('Composition of U.S. House by victory margin');
+
+    svg.append('text')
+        .attr('transform', 'rotate(-90)translate(0,-35)')
+        .attr('text-anchor', 'end')
+        .text('Number of representatives');
 
     var parties = byPartyThenCertainty.entries(results)
         .filter(function(d) { return d.key != 'I'; });
