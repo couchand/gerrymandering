@@ -7,10 +7,15 @@ body {
 }
 
 .axis path,
-.axis line {
+.axis line,
+.key line {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
+}
+
+.key path {
+    display: none;
 }
 
 </style>
@@ -34,12 +39,19 @@ var width = 400,
     height = 200,
     margin = 30,
     labelSpace = 20,
+    keySpace = 50,
+    keyWidth = 200,
+    keyHeight = 8,
+    keyMargin = 2,
     widthSvg = width + margin*2 + labelSpace,
-    heightSvg = height + margin*2 + labelSpace;
+    heightSvg = height + margin*2 + labelSpace + keySpace;
+
+var cutoffSafe = 0.67,
+    cutoffLikely = 0.54;
 
 var percentage = d3.format('.0%');
 
-function getCertainty(d) { return d.result > 0.67 ? 'Safe' : d.result > 0.54 ? 'Likely' : 'Close'; }
+function getCertainty(d) { return d.result > cutoffSafe ? 'Safe' : d.result > cutoffLikely ? 'Likely' : 'Close'; }
 function getParty(d) { return d.party[0] == 'D' ? 'D' : d.party[0] == 'R' ? 'R' : 'I'; }
 
 var byPartyThenCertainty = d3.nest()
@@ -139,6 +151,25 @@ var color = {
     }
 };
 
+var thresholdD = d3.scale.threshold()
+    .domain([cutoffSafe, cutoffLikely])
+    .range([color.D.Safe, color.D.Likely, color.D.Close]);
+
+var thresholdR = d3.scale.threshold()
+    .domain([cutoffSafe, cutoffLikely])
+    .range([color.R.Safe, color.R.Likely, color.R.Close]);
+
+var keyX = d3.scale.linear()
+    .domain([1, 0.47])
+    .range([0, keyWidth]);
+
+var keyAxis = d3.svg.axis()
+    .scale(keyX)
+    .orient('bottom')
+    .tickSize(5 + 2*keyHeight + keyMargin)
+    .tickValues(thresholdD.domain())
+    .tickFormat(percentage);
+
 function cleanRecord(d) {
     d.name = d.name.trim();
     d.state = d.state.trim();
@@ -187,8 +218,68 @@ function checkComplete() {
         .attr('width', widthSvg)
         .attr('height', heightSvg);
 
+    var key = viz.append('g')
+        .attr('class', 'key')
+        .attr('transform', 'translate('+(margin+80)+','+(margin+12)+')');
+
+    key.append('text')
+        .attr('x', -3)
+        .attr('y', keyHeight-1)
+        .attr('text-anchor', 'end')
+        .text('Democrat');
+
+    key.append('text')
+        .attr('x', -3)
+        .attr('y', 2*keyHeight+keyMargin)
+        .attr('text-anchor', 'end')
+        .text('Republican');
+
+    key.append('text')
+        .attr('x', keyWidth*0.5)
+        .attr('y', -2)
+        .text('safe');
+
+    key.append('text')
+        .attr('text-anchor', 'end')
+        .attr('x', keyWidth-8)
+        .attr('y', -2)
+        .text('close');
+
+    key.selectAll('rect.d')
+        .data(thresholdD.range().map(function(color) {
+            var d = thresholdD.invertExtent(color);
+            if (d[0] == null) d[0] = keyX.domain()[0];
+            if (d[1] == null) d[1] = keyX.domain()[1];
+            d.color = color;
+            return d;
+        }))
+        .enter().append('rect')
+        .attr('class', 'd')
+        .attr('height', keyHeight)
+        .attr('x', function(d) { return keyX(d[0]); })
+        .attr('width', function(d) { return keyX(d[1]) - keyX(d[0]); })
+        .attr('fill', function(d) { return d.color; });
+
+    key.selectAll('rect.r')
+        .data(thresholdR.range().map(function(color) {
+            var d = thresholdR.invertExtent(color);
+            if (d[0] == null) d[0] = keyX.domain()[0];
+            if (d[1] == null) d[1] = keyX.domain()[1];
+            d.color = color;
+            return d;
+        }))
+        .enter().append('rect')
+        .attr('class', 'r')
+        .attr('height', keyHeight)
+        .attr('y', keyHeight+keyMargin)
+        .attr('x', function(d) { return keyX(d[0]); })
+        .attr('width', function(d) { return keyX(d[1]) - keyX(d[0]); })
+        .attr('fill', function(d) { return d.color; });
+
+    key.call(keyAxis);
+
     var svg = viz.append('g')
-        .attr('transform', 'translate('+(margin+labelSpace)+','+(margin+labelSpace)+')');
+        .attr('transform', 'translate('+(margin+labelSpace)+','+(margin+labelSpace+keySpace)+')');
 
     viz.append('text')
         .attr('font-size', 14)
