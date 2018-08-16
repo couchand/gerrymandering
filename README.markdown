@@ -5,6 +5,8 @@ a visualization of the growth of safe seats in the u.s. house
 
 built with d3
 
+read the [blog post](http://compiledthoughts.couchand.com/2013/10/the-increasing-polarization-of-the-u-s-house/)
+
 inspired by a chart on the [washington post](http://www.washingtonpost.com/blogs/the-fix/wp/2013/10/07/want-to-know-why-the-government-is-shut-down-this-chart-explains-it/)
 
 some inspiration also taken from a chart by [xkcd](http://xkcd.com/1127/)
